@@ -1,0 +1,45 @@
+<div class="game-play-container">
+  <!-- Header -->
+  <header class="header">
+    <button class="btn-back" (click)="goBack()">
+      <span class="desktop-text">← Retour</span>
+      <span class="mobile-text">←</span>
+    </button>
+    <h1 class="title">{{ gameName }}</h1>
+    <div class="player-info">
+      <span class="player-count">
+        <span class="desktop-text">{{ players.length }} joueur{{ players.length > 1 ? 's' : '' }} actif{{ players.length > 1 ? 's' : '' }}</span>
+        <span class="mobile-text">👥 {{ players.length }}</span>
+      </span>
+      <span *ngIf="isGameStarted" class="question-counter">
+        <span class="desktop-text">Question {{ currentQuestionNumber }}/{{ maxQuestions }}</span>
+        <span class="mobile-text">❓ {{ currentQuestionNumber }}/{{ maxQuestions }}</span>
+      </span>
+    </div>
+  </header>
+
+  <!-- Game Content -->
+  <div class="game-content">
+    <div class="question-card" (click)="onCardClick()">
+      <!-- Icônes dans les coins -->
+      <div class="corner-icon top-left">🎮</div>
+      <div class="corner-icon top-right">🔥</div>
+      <div class="corner-icon bottom-left">💫</div>
+      <div class="corner-icon bottom-right">⭐</div>
+      
+      <div class="card-content">
+        <div *ngIf="!isGameStarted" class="start-message">
+          <h2>Cliquez pour commencer</h2>
+          <p>La première question apparaîtra ici</p>
+          <p class="game-info">{{ maxQuestions }} questions par partie</p>
+        </div>
+        <div *ngIf="isGameStarted && currentQuestion" class="question-text">
+          <h2>{{ currentQuestion }}</h2>
+        </div>
+      </div>
+      
+      <!-- Points de suspension en bas -->
+      <div class="dots-bottom">...</div>
+    </div>
+  </div>
+</div> 

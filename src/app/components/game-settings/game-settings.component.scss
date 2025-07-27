@@ -1,0 +1,296 @@
+// Variables
+$primary-color: #667eea;
+$secondary-color: #764ba2;
+$success-color: #48bb78;
+$danger-color: #f56565;
+$warning-color: #ed8936;
+$light-bg: #f7fafc;
+$dark-bg: #2d3748;
+$text-primary: #2d3748;
+$text-secondary: #718096;
+$border-color: #e2e8f0;
+$shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+$border-radius: 12px;
+$transition: all 0.3s ease;
+
+// Mixins
+@mixin mobile {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+
+// Container
+.settings-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, $primary-color 0%, $secondary-color 100%);
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+  @include mobile {
+    padding: 16px;
+  }
+}
+
+// Header
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 32px;
+  flex-wrap: wrap;
+  gap: 16px;
+
+  @include mobile {
+    flex-direction: column;
+    align-items: stretch;
+    text-align: center;
+  }
+
+  .btn-back {
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 10px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: $transition;
+    font-size: 0.9rem;
+    font-weight: 500;
+
+    &:hover {
+      background: rgba(255, 255, 255, 0.3);
+      transform: translateX(-2px);
+    }
+  }
+
+  .title {
+    color: white;
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+
+    @include mobile {
+      font-size: 1.5rem;
+    }
+  }
+
+  .player-info {
+    .player-count {
+      background: rgba(255, 255, 255, 0.2);
+      color: white;
+      padding: 8px 16px;
+      border-radius: 20px;
+      font-size: 0.9rem;
+      font-weight: 500;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+    }
+  }
+}
+
+// Settings Content
+.settings-content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+// Settings Section
+.settings-section {
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  padding: 24px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+
+  @include mobile {
+    padding: 20px;
+  }
+
+  h2 {
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin: 0 0 16px 0;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+  }
+
+  .section-description {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.9rem;
+    margin: 0 0 20px 0;
+    line-height: 1.5;
+  }
+}
+
+
+
+// Question Count Scroll
+.question-count-scroll {
+  display: flex;
+  gap: 16px;
+  overflow-x: auto;
+  padding: 8px 0;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  .count-btn {
+    min-width: 80px;
+    padding: 16px 12px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    cursor: pointer;
+    transition: $transition;
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-align: center;
+    flex-shrink: 0;
+
+    &:hover {
+      background: rgba(255, 255, 255, 0.2);
+      border-color: rgba(255, 255, 255, 0.5);
+      transform: translateY(-2px);
+    }
+
+    &.active {
+      background: white;
+      color: $primary-color;
+      border-color: white;
+      box-shadow: 0 4px 15px rgba(255, 255, 255, 0.3);
+    }
+  }
+}
+
+// Bonus Toggle
+.bonus-toggle {
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+
+  .toggle-label {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    cursor: pointer;
+    color: white;
+    font-weight: 500;
+    font-size: 1rem;
+
+    .toggle-input {
+      display: none;
+    }
+
+    .toggle-slider {
+      position: relative;
+      width: 60px;
+      height: 30px;
+      background: rgba(255, 255, 255, 0.2);
+      border-radius: 15px;
+      transition: $transition;
+      border: 2px solid rgba(255, 255, 255, 0.3);
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: 2px;
+        left: 2px;
+        width: 22px;
+        height: 22px;
+        background: white;
+        border-radius: 50%;
+        transition: $transition;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+      }
+    }
+
+    .toggle-input:checked + .toggle-slider {
+      background: $success-color;
+      border-color: $success-color;
+
+      &::before {
+        transform: translateX(30px);
+      }
+    }
+
+    .toggle-text {
+      white-space: nowrap;
+    }
+  }
+}
+
+// Buttons
+.btn {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: $transition;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+
+
+
+  &.btn-primary {
+    background: linear-gradient(135deg, $success-color 0%, darken($success-color, 10%) 100%);
+    color: white;
+    box-shadow: 0 4px 15px rgba(72, 187, 120, 0.3);
+
+    &:hover:not(:disabled) {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(72, 187, 120, 0.4);
+    }
+  }
+
+  &.btn-secondary {
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+
+    &:hover {
+      background: rgba(255, 255, 255, 0.3);
+    }
+  }
+}
+
+
+
+// Actions Section
+.actions-section {
+  margin-top: 16px;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+
+  @include mobile {
+    flex-direction: column;
+  }
+
+  .btn {
+    flex: 1;
+    justify-content: center;
+    font-size: 1rem;
+    padding: 16px 24px;
+  }
+} 

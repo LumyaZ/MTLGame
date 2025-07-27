@@ -1,0 +1,67 @@
+[
+  {
+    "id": 1,
+    "name": "Pictionary",
+    "description": "Dessinez et faites deviner des mots à vos amis",
+    "minPlayers": 2,
+    "maxPlayers": 8,
+    "duration": "15-30 min",
+    "category": "Créativité",
+    "difficulty": "Facile",
+    "materials": ["Papier", "Crayons", "Timer"],
+    "instructions": "Un joueur dessine un mot et les autres doivent le deviner",
+    "image": "assets/images/pictionary.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Taboo",
+    "description": "Faites deviner un mot sans utiliser les mots interdits",
+    "minPlayers": 4,
+    "maxPlayers": 10,
+    "duration": "20-40 min",
+    "category": "Communication",
+    "difficulty": "Moyen",
+    "materials": ["Cartes de mots", "Timer"],
+    "instructions": "Décrivez un mot sans utiliser les mots interdits listés",
+    "image": "assets/images/taboo.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Charades",
+    "description": "Mimez des films, livres ou expressions pour les faire deviner",
+    "minPlayers": 3,
+    "maxPlayers": 12,
+    "duration": "10-25 min",
+    "category": "Mime",
+    "difficulty": "Facile",
+    "materials": ["Papier", "Crayons"],
+    "instructions": "Mimez un titre sans parler ni faire de bruit",
+    "image": "assets/images/charades.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Never Have I Ever",
+    "description": "Révélez des secrets et découvrez ceux de vos amis",
+    "minPlayers": 3,
+    "maxPlayers": 15,
+    "duration": "15-45 min",
+    "category": "Social",
+    "difficulty": "Facile",
+    "materials": ["Doigts pour compter"],
+    "instructions": "Dites 'Je n'ai jamais...' et ceux qui l'ont fait baissent un doigt",
+    "image": "assets/images/never-have-i-ever.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Truth or Dare",
+    "description": "Choisissez entre dire la vérité ou relever un défi",
+    "minPlayers": 3,
+    "maxPlayers": 10,
+    "duration": "20-60 min",
+    "category": "Social",
+    "difficulty": "Moyen",
+    "materials": ["Questions et défis"],
+    "instructions": "Choisissez 'Vérité' ou 'Action' et répondez à la question ou relevez le défi",
+    "image": "assets/images/truth-or-dare.jpg"
+  }
+] 

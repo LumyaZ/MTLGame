@@ -1,0 +1,39 @@
+<div class="games-container">
+  <!-- Header -->
+  <header class="header">
+    <button class="btn-back" (click)="goBack()">
+      ← Retour
+    </button>
+    <h1 class="title">🎮 Jeux disponibles</h1>
+    <div class="player-info">
+      <span class="player-count">{{ players.length }} joueur{{ players.length > 1 ? 's' : '' }} actif{{ players.length > 1 ? 's' : '' }}</span>
+    </div>
+  </header>
+
+
+
+  <!-- Games List -->
+  <section class="games-section">
+    <div class="section-header">
+      <h2>{{ selectedCategory.toUpperCase() }}</h2>
+      <span class="games-count">{{ getGamesByCategory(selectedCategory).length }} jeu{{ getGamesByCategory(selectedCategory).length > 1 ? 'x' : '' }}</span>
+    </div>
+
+    <div class="games-scroll" *ngIf="getGamesByCategory(selectedCategory).length > 0">
+      <div 
+        class="game-button" 
+        *ngFor="let game of getGamesByCategory(selectedCategory)"
+        (click)="startGame(game)">
+        <div class="game-name">{{ game.name }}</div>
+
+      </div>
+    </div>
+
+    <!-- Empty State -->
+    <div class="empty-state" *ngIf="getGamesByCategory(selectedCategory).length === 0">
+      <div class="empty-icon">🎮</div>
+      <h3>Aucun jeu dans cette catégorie</h3>
+      <p>Les jeux seront ajoutés prochainement</p>
+    </div>
+  </section>
+</div> 
