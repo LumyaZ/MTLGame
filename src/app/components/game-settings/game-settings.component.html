@@ -1,44 +1,54 @@
 <div class="settings-container">
-  <!-- Header -->
-  <header class="header">
-    <button class="btn-back" (click)="goBack()">
-      ← Retour aux jeux
-    </button>
-    <h1 class="title">⚙️ {{ gameName }}</h1>
-    <div class="player-info">
-      <span class="player-count">{{ players.length }} joueur{{ players.length > 1 ? 's' : '' }} actif{{ players.length > 1 ? 's' : '' }}</span>
-    </div>
-  </header>
-
-  <!-- Settings Content -->
   <div class="settings-content">
+    <!-- Header -->
+    <header class="header">
+      <div class="header-top">
+        <button class="btn-back" (click)="goBack()">
+          ← Retour aux jeux
+        </button>
+        <div class="game-info">
+          <span class="game-name">{{ gameName }}</span>
+          <span class="player-count">{{ players.length }} joueur{{ players.length > 1 ? 's' : '' }} actif{{ players.length > 1 ? 's' : '' }}</span>
+        </div>
+      </div>
+      <h1 class="title">⚙️ Paramètres du jeu</h1>
+      <p class="subtitle">Configurez votre partie de "{{ gameName }}"</p>
+    </header>
 
-
-    <!-- Question Count -->
+    <!-- Question Count Section -->
     <section class="settings-section">
-      <h2>📊 Nombre de questions</h2>
+      <h2>❓ Nombre de questions</h2>
+      <p class="section-description">
+        Choisissez le nombre de questions pour votre partie. Plus de questions = partie plus longue !
+      </p>
       
       <div class="question-count-scroll">
         <button 
-          class="count-btn"
+          class="count-btn" 
+          [class.active]="settings.questionCount === 10"
+          (click)="settings.questionCount = 10">
+          10
+        </button>
+        <button 
+          class="count-btn" 
           [class.active]="settings.questionCount === 25"
           (click)="settings.questionCount = 25">
           25
         </button>
         <button 
-          class="count-btn"
+          class="count-btn" 
           [class.active]="settings.questionCount === 50"
           (click)="settings.questionCount = 50">
           50
         </button>
         <button 
-          class="count-btn"
+          class="count-btn" 
           [class.active]="settings.questionCount === 75"
           (click)="settings.questionCount = 75">
           75
         </button>
         <button 
-          class="count-btn"
+          class="count-btn" 
           [class.active]="settings.questionCount === 100"
           (click)="settings.questionCount = 100">
           100
@@ -46,9 +56,12 @@
       </div>
     </section>
 
-    <!-- Bonus Round -->
+    <!-- Bonus Round Section -->
     <section class="settings-section">
       <h2>🎁 Manche bonus</h2>
+      <p class="section-description">
+        Activez la manche bonus pour ajouter du piment à votre partie !
+      </p>
       
       <div class="bonus-toggle">
         <label class="toggle-label">
@@ -65,6 +78,11 @@
     <!-- Action Buttons -->
     <section class="actions-section">
       <div class="action-buttons">
+        <button 
+          class="btn btn-secondary"
+          (click)="goBack()">
+          ← Retour
+        </button>
         <button 
           class="btn btn-primary"
           (click)="startGame()">

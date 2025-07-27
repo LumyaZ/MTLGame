@@ -1,95 +1,75 @@
 <div class="home-container">
-  <!-- Header -->
-  <header class="header">
-    <h1 class="title">🎮 MTL Game Night</h1>
-    <p class="subtitle">Organisez vos soirées de jeux</p>
-  </header>
+  <div class="main-content">
+    <!-- Header -->
+    <header class="header">
+      <h1 class="title">🎮 MTL Game Night</h1>
+      <p class="subtitle">Organisez vos soirées de jeux avec style</p>
+    </header>
 
-  <!-- Player Management Section -->
-  <section class="player-section">
-    <div class="section-header">
-      <h2>👥 Joueurs</h2>
-      <div class="header-actions">
-        <button 
-          class="btn btn-secondary" 
-          (click)="clearAllPlayers()"
-          [disabled]="players.length === 0">
-          🗑️ Tout supprimer
-        </button>
+    <!-- Players Section -->
+    <section class="players-section">
+      <div class="section-header">
+        <h2>👥 Gestion des joueurs</h2>
+        <div class="player-count" *ngIf="players.length > 0">
+          {{ players.length }} joueur{{ players.length > 1 ? 's' : '' }}
+        </div>
       </div>
-    </div>
 
-    <!-- Add Player Form -->
-    <div class="add-player-form">
-      <div class="form-group">
+      <!-- Add Player Form -->
+      <div class="add-player-form">
         <input 
           type="text" 
           id="playerNameInput"
           [(ngModel)]="newPlayerName"
           placeholder="Nom du joueur"
-          class="form-input"
           (keyup.enter)="addPlayer()"
           maxlength="20">
         <button 
-          class="btn btn-success" 
+          class="btn-add"
           (click)="addPlayer()"
           [disabled]="!newPlayerName.trim()">
-          Ajouter
+          ➕ Ajouter
         </button>
       </div>
-    </div>
 
-    <!-- Players List -->
-    <div class="players-list" *ngIf="players.length > 0">
-      <div 
-        class="player-card" 
-        *ngFor="let player of players"
-        [class.inactive]="!player.isActive">
-        <div class="player-avatar" [style.background-color]="player.color">
-          {{ player.name.charAt(0).toUpperCase() }}
-        </div>
-        <div class="player-info">
-          <h3 class="player-name">{{ player.name }}</h3>
-          <span class="player-status" [class.active]="player.isActive">
-            {{ player.isActive ? 'Actif' : 'Inactif' }}
-          </span>
-        </div>
-        <div class="player-actions">
-          <button 
-            class="btn-icon"
-            (click)="togglePlayerActive(player.id)"
-            [title]="player.isActive ? 'Désactiver' : 'Activer'">
-            {{ player.isActive ? '👁️' : '👁️‍🗨️' }}
-          </button>
-          <button 
-            class="btn-icon btn-danger"
-            (click)="removePlayer(player.id)"
-            title="Supprimer">
-            🗑️
-          </button>
+      <!-- Players Grid -->
+      <div class="players-grid" *ngIf="players.length > 0">
+        <div 
+          class="player-card" 
+          *ngFor="let player of players"
+          [class.active]="player.isActive"
+          (click)="togglePlayerActive(player.id)">
+          <div class="player-name">{{ player.name }}</div>
+          <div class="player-status">
+            <div class="status-indicator" [class.inactive]="!player.isActive"></div>
+            <span>{{ player.isActive ? 'Actif' : 'Inactif' }}</span>
+          </div>
         </div>
       </div>
-    </div>
 
-    <!-- Empty State -->
-    <div class="empty-state" *ngIf="players.length === 0">
-      <div class="empty-icon">👥</div>
-      <h3>Aucun joueur</h3>
-      <p>Ajoutez des joueurs pour commencer une partie</p>
-    </div>
-  </section>
+      <!-- Empty State -->
+      <div class="empty-state" *ngIf="players.length === 0">
+        <div class="empty-icon">👥</div>
+        <h3>Aucun joueur ajouté</h3>
+        <p>Ajoutez des joueurs pour commencer une partie</p>
+      </div>
+    </section>
 
-  <!-- Start Game Button -->
-  <section class="start-section">
-    <button 
-      class="btn btn-start"
-      (click)="startGame()"
-      [disabled]="players.length < 2">
-      <span class="btn-icon">🎯</span>
-      Jouer
-      <span class="player-count" *ngIf="players.length > 0">
-        ({{ players.length }} joueur{{ players.length > 1 ? 's' : '' }})
-      </span>
-    </button>
-  </section>
+    <!-- Actions Section -->
+    <section class="actions-section">
+      <button 
+        class="btn-primary"
+        (click)="startGame()"
+        [disabled]="players.length < 2">
+        🎯 Commencer une partie
+      </button>
+      
+      <button 
+        class="btn-secondary"
+        (click)="clearAllPlayers()"
+        [disabled]="players.length === 0">
+        🗑️ Réinitialiser
+      </button>
+    </section>
+  </div>
 </div> 

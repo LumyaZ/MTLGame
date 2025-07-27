@@ -1,17 +1,23 @@
 // Variables
-$primary-color: #667eea;
-$secondary-color: #764ba2;
-$success-color: #48bb78;
-$danger-color: #f56565;
-$warning-color: #ed8936;
-$light-bg: #f7fafc;
-$dark-bg: #2d3748;
-$text-primary: #2d3748;
-$text-secondary: #718096;
-$border-color: #e2e8f0;
-$shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-$border-radius: 12px;
-$transition: all 0.3s ease;
+$bg-primary: var(--bg-primary);
+$bg-secondary: var(--bg-secondary);
+$bg-tertiary: var(--bg-tertiary);
+$bg-card: var(--bg-card);
+$text-primary: var(--text-primary);
+$text-secondary: var(--text-secondary);
+$text-muted: var(--text-muted);
+$accent-primary: var(--accent-primary);
+$accent-secondary: var(--accent-secondary);
+$accent-success: var(--accent-success);
+$accent-warning: var(--accent-warning);
+$accent-danger: var(--accent-danger);
+$border-primary: var(--border-primary);
+$border-secondary: var(--border-secondary);
+$shadow-md: var(--shadow-md);
+$shadow-lg: var(--shadow-lg);
+$gradient-primary: var(--gradient-primary);
+$gradient-secondary: var(--gradient-secondary);
+$gradient-dark: var(--gradient-dark);
 
 // Mixins
 @mixin mobile {
@@ -21,45 +27,98 @@ $transition: all 0.3s ease;
 }
 
 @mixin tablet {
-  @media (min-width: 769px) and (max-width: 1024px) {
+  @media (max-width: 1024px) {
     @content;
   }
 }
 
-// Global styles
+// Container principal
 .home-container {
   min-height: 100vh;
-  background: linear-gradient(135deg, $primary-color 0%, $secondary-color 100%);
-  padding: 20px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: $gradient-dark;
+  position: relative;
+  overflow: hidden;
+
+  // Effet de particules en arrière-plan
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: 
+      radial-gradient(circle at 20% 80%, rgba(99, 102, 241, 0.1) 0%, transparent 50%),
+      radial-gradient(circle at 80% 20%, rgba(139, 92, 246, 0.1) 0%, transparent 50%),
+      radial-gradient(circle at 40% 40%, rgba(16, 185, 129, 0.05) 0%, transparent 50%);
+    pointer-events: none;
+    z-index: 1;
+  }
+
+  // Grille de points subtile
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: 
+      radial-gradient(circle 1px at 1px 1px, rgba(255, 255, 255, 0.05) 1px, transparent 0);
+    background-size: 50px 50px;
+    pointer-events: none;
+    z-index: 1;
+  }
+}
+
+// Contenu principal
+.main-content {
+  position: relative;
+  z-index: 2;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
 
   @include mobile {
-    padding: 16px;
+    padding: 1rem;
   }
 }
 
 // Header
 .header {
   text-align: center;
-  margin-bottom: 32px;
-  color: white;
+  margin-bottom: 3rem;
+  animation: fadeIn 1s ease-out;
 
   .title {
-    font-size: 2.5rem;
-    font-weight: 700;
-    margin: 0 0 8px 0;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    font-size: 3.5rem;
+    font-weight: 900;
+    background: $gradient-primary;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 1rem;
+    letter-spacing: -0.02em;
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 
     @include mobile {
-      font-size: 2rem;
+      font-size: 2.5rem;
+    }
+
+    @include tablet {
+      font-size: 3rem;
     }
   }
 
   .subtitle {
-    font-size: 1.1rem;
-    margin: 0;
-    opacity: 0.9;
-    font-weight: 300;
+    font-size: 1.2rem;
+    color: $text-secondary;
+    font-weight: 400;
+    margin-bottom: 2rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
 
     @include mobile {
       font-size: 1rem;
@@ -67,278 +126,306 @@ $transition: all 0.3s ease;
   }
 }
 
-// Player Section
-.player-section {
-  background: white;
-  border-radius: $border-radius;
-  padding: 24px;
-  margin-bottom: 24px;
-  box-shadow: $shadow;
+// Section des joueurs
+.players-section {
+  background: $bg-card;
+  border-radius: 24px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  border: 1px solid $border-primary;
+  box-shadow: $shadow-lg;
+  backdrop-filter: blur(20px);
+  animation: slideIn 0.8s ease-out 0.2s both;
 
   @include mobile {
-    padding: 20px;
-  }
-}
-
-.section-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 24px;
-  flex-wrap: wrap;
-  gap: 16px;
-
-  h2 {
-    margin: 0;
-    font-size: 1.5rem;
-    font-weight: 600;
-    color: $text-primary;
+    padding: 1.5rem;
+    border-radius: 16px;
   }
 
-  .header-actions {
+  .section-header {
     display: flex;
-    gap: 12px;
-    flex-wrap: wrap;
-  }
-}
-
-// Buttons
-.btn {
-  padding: 12px 20px;
-  border: none;
-  border-radius: 8px;
-  font-size: 0.9rem;
-  font-weight: 500;
-  cursor: pointer;
-  transition: $transition;
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  text-decoration: none;
-
-  &:disabled {
-    opacity: 0.5;
-    cursor: not-allowed;
-  }
-
-  &.btn-primary {
-    background: $primary-color;
-    color: white;
-
-    &:hover:not(:disabled) {
-      background: darken($primary-color, 10%);
-      transform: translateY(-1px);
-    }
-
-    &.active {
-      background: $danger-color;
-    }
-  }
-
-  &.btn-secondary {
-    background: $light-bg;
-    color: $text-primary;
-    border: 1px solid $border-color;
-
-    &:hover:not(:disabled) {
-      background: darken($light-bg, 5%);
-    }
-  }
-
-  &.btn-success {
-    background: $success-color;
-    color: white;
-
-    &:hover:not(:disabled) {
-      background: darken($success-color, 10%);
-    }
-  }
-
-  &.btn-start {
-    background: linear-gradient(135deg, $success-color 0%, darken($success-color, 10%) 100%);
-    color: white;
-    font-size: 1.1rem;
-    padding: 16px 32px;
-    border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(72, 187, 120, 0.4);
-
-    &:hover:not(:disabled) {
-      transform: translateY(-2px);
-      box-shadow: 0 6px 20px rgba(72, 187, 120, 0.6);
-    }
-
-    .player-count {
-      font-size: 0.9rem;
-      opacity: 0.9;
-    }
-  }
-}
-
-.btn-icon {
-  background: none;
-  border: none;
-  font-size: 1.2rem;
-  cursor: pointer;
-  padding: 8px;
-  border-radius: 6px;
-  transition: $transition;
-
-  &:hover {
-    background: $light-bg;
-  }
-
-  &.btn-danger:hover {
-    background: lighten($danger-color, 40%);
-    color: $danger-color;
-  }
-}
-
-// Form
-.add-player-form {
-  background: $light-bg;
-  border-radius: 8px;
-  padding: 20px;
-  margin-bottom: 24px;
-
-  .form-group {
-    display: flex;
-    gap: 12px;
+    justify-content: space-between;
     align-items: center;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+    gap: 1rem;
 
     @include mobile {
       flex-direction: column;
       align-items: stretch;
     }
-  }
 
-  .form-input {
-    flex: 1;
-    padding: 12px 16px;
-    border: 2px solid $border-color;
-    border-radius: 8px;
-    font-size: 1rem;
-    transition: $transition;
-
-    &:focus {
-      outline: none;
-      border-color: $primary-color;
-      box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+    h2 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: $text-primary;
+      margin: 0;
     }
 
-    &::placeholder {
-      color: $text-secondary;
+    .player-count {
+      background: $gradient-primary;
+      color: white;
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      box-shadow: $shadow-md;
     }
   }
-}
 
-// Players List
-.players-list {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
+  .players-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-bottom: 1.5rem;
 
-.player-card {
-  display: flex;
-  align-items: center;
-  padding: 16px;
-  background: $light-bg;
-  border-radius: 12px;
-  border: 2px solid transparent;
-  transition: $transition;
-  animation: slideIn 0.3s ease;
-
-  &:hover {
-    border-color: $primary-color;
-    transform: translateX(4px);
+    @include mobile {
+      grid-template-columns: 1fr;
+    }
   }
 
-  &.inactive {
-    opacity: 0.6;
-    background: #f1f5f9;
-  }
+  .player-card {
+    background: $bg-secondary;
+    border: 1px solid $border-secondary;
+    border-radius: 16px;
+    padding: 1rem;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
 
-  .player-avatar {
-    width: 48px;
-    height: 48px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.2rem;
-    font-weight: 600;
-    color: white;
-    margin-right: 16px;
-    flex-shrink: 0;
-  }
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(99, 102, 241, 0.1), transparent);
+      transition: left 0.5s;
+    }
 
-  .player-info {
-    flex: 1;
-    min-width: 0;
+    &:hover {
+      transform: translateY(-4px);
+      border-color: $accent-primary;
+      box-shadow: 0 8px 25px rgba(99, 102, 241, 0.2);
+
+      &::before {
+        left: 100%;
+      }
+    }
+
+    &.active {
+      border-color: $accent-success;
+      background: rgba(16, 185, 129, 0.1);
+      box-shadow: 0 4px 15px rgba(16, 185, 129, 0.2);
+    }
 
     .player-name {
-      margin: 0 0 4px 0;
-      font-size: 1.1rem;
+      font-size: 1rem;
       font-weight: 600;
       color: $text-primary;
+      margin-bottom: 0.5rem;
     }
 
     .player-status {
-      font-size: 0.85rem;
+      font-size: 0.8rem;
       color: $text-secondary;
-      padding: 2px 8px;
-      border-radius: 12px;
-      background: #e2e8f0;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
 
-      &.active {
-        background: lighten($success-color, 40%);
-        color: darken($success-color, 20%);
+      .status-indicator {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: $accent-success;
+
+        &.inactive {
+          background: $text-muted;
+        }
       }
     }
   }
 
-  .player-actions {
+  .add-player-form {
     display: flex;
-    gap: 8px;
-    flex-shrink: 0;
+    gap: 1rem;
+    align-items: center;
+    flex-wrap: wrap;
+
+    @include mobile {
+      flex-direction: column;
+      align-items: stretch;
+    }
+
+    input {
+      flex: 1;
+      min-width: 200px;
+      padding: 0.75rem 1rem;
+      border: 1px solid $border-secondary;
+      border-radius: 12px;
+      background: $bg-secondary;
+      color: $text-primary;
+      font-size: 1rem;
+      transition: all 0.3s ease;
+
+      &::placeholder {
+        color: $text-muted;
+      }
+
+      &:focus {
+        border-color: $accent-primary;
+        box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
+        outline: none;
+      }
+    }
+
+    .btn-add {
+      background: $gradient-primary;
+      color: white;
+      border: none;
+      padding: 0.75rem 1.5rem;
+      border-radius: 12px;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      box-shadow: $shadow-md;
+
+      &:hover {
+        transform: translateY(-2px);
+        box-shadow: $shadow-lg;
+      }
+
+      &:active {
+        transform: translateY(0);
+      }
+
+      &:disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
+        transform: none;
+      }
+    }
   }
 }
 
-// Empty State
+// Section des actions
+.actions-section {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  animation: fadeIn 0.8s ease-out 0.4s both;
+
+  @include mobile {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .btn-primary {
+    background: $gradient-primary;
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 16px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: $shadow-lg;
+    min-width: 200px;
+    position: relative;
+    overflow: hidden;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+      transition: left 0.5s;
+    }
+
+    &:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 30px rgba(99, 102, 241, 0.4);
+
+      &::before {
+        left: 100%;
+      }
+    }
+
+    &:active {
+      transform: translateY(-2px);
+    }
+
+    @include mobile {
+      min-width: auto;
+      padding: 1rem;
+    }
+  }
+
+  .btn-secondary {
+    background: $bg-card;
+    color: $text-primary;
+    border: 1px solid $border-primary;
+    padding: 1rem 2rem;
+    border-radius: 16px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: $shadow-md;
+    min-width: 200px;
+
+    &:hover {
+      background: $bg-secondary;
+      border-color: $accent-primary;
+      transform: translateY(-2px);
+      box-shadow: $shadow-lg;
+    }
+
+    @include mobile {
+      min-width: auto;
+      padding: 1rem;
+    }
+  }
+}
+
+// États vides
 .empty-state {
   text-align: center;
-  padding: 40px 20px;
+  padding: 3rem 1rem;
   color: $text-secondary;
 
   .empty-icon {
-    font-size: 3rem;
-    margin-bottom: 16px;
+    font-size: 4rem;
+    margin-bottom: 1rem;
     opacity: 0.5;
   }
 
   h3 {
-    margin: 0 0 8px 0;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     font-weight: 600;
+    color: $text-primary;
+    margin-bottom: 0.5rem;
   }
 
   p {
-    margin: 0;
-    font-size: 0.95rem;
+    font-size: 1rem;
+    line-height: 1.6;
   }
 }
 
-// Start Section
-.start-section {
-  text-align: center;
-  padding: 20px 0;
-}
-
 // Animations
-@keyframes slideDown {
+@keyframes fadeIn {
   from {
     opacity: 0;
-    transform: translateY(-10px);
+    transform: translateY(30px);
   }
   to {
     opacity: 1;
@@ -349,37 +436,10 @@ $transition: all 0.3s ease;
 @keyframes slideIn {
   from {
     opacity: 0;
-    transform: translateX(-20px);
+    transform: translateX(-30px);
   }
   to {
     opacity: 1;
     transform: translateX(0);
-  }
-}
-
-// Responsive adjustments
-@include mobile {
-  .section-header {
-    flex-direction: column;
-    align-items: stretch;
-
-    .header-actions {
-      justify-content: center;
-    }
-  }
-
-  .player-card {
-    padding: 12px;
-
-    .player-avatar {
-      width: 40px;
-      height: 40px;
-      font-size: 1rem;
-      margin-right: 12px;
-    }
-
-    .player-info .player-name {
-      font-size: 1rem;
-    }
   }
 } 

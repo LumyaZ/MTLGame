@@ -13,6 +13,7 @@ export interface Game {
   duration: string;
   difficulty: string;
   icon: string;
+  isUnderConstruction?: boolean;
 }
 
 @Component({
@@ -44,7 +45,8 @@ export class GamesComponent implements OnInit {
       maxPlayers: 12,
       duration: "20-40 min",
       difficulty: "Moyen",
-      icon: "🤔"
+      icon: "🤔",
+      isUnderConstruction: true
     },
     {
       id: 3,
@@ -55,7 +57,8 @@ export class GamesComponent implements OnInit {
       maxPlayers: 10,
       duration: "15-30 min",
       difficulty: "Facile",
-      icon: "⭐"
+      icon: "⭐",
+      isUnderConstruction: true
     }
   ];
 
@@ -83,6 +86,11 @@ export class GamesComponent implements OnInit {
   }
 
   startGame(game: Game): void {
+    // Empêcher le démarrage des jeux en construction
+    if (game.isUnderConstruction) {
+      return;
+    }
+    
     // Navigation vers la page de paramètres du jeu
     this.router.navigate(['/settings', game.id]);
   }
