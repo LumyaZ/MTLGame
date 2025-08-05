@@ -13,28 +13,89 @@
 
     <!-- Games Section -->
     <section class="games-section">
+      <!-- TAZ Section -->
       <div class="section-header">
-        <h2>{{ selectedCategory.toUpperCase() }}</h2>
-        <span class="games-count">{{ getGamesByCategory(selectedCategory).length }} jeu{{ getGamesByCategory(selectedCategory).length > 1 ? 'x' : '' }}</span>
+        <h2>TAZ</h2>
+        <span class="games-count">{{ getGamesByCategory('taz').length }} jeu{{ getGamesByCategory('taz').length > 1 ? 'x' : '' }}</span>
       </div>
 
-      <div class="games-scroll" *ngIf="getGamesByCategory(selectedCategory).length > 0">
+      <div class="games-scroll" *ngIf="getGamesByCategory('taz').length > 0">
         <div 
           class="game-button" 
           [class.under-construction]="game.isUnderConstruction"
-          *ngFor="let game of getGamesByCategory(selectedCategory)"
-          (click)="startGame(game)">
-          <div class="game-name">{{ game.name }}</div>
+          *ngFor="let game of getGamesByCategory('taz')"
+          (click)="selectGame(game)">
+          <div class="game-icon">{{ game.icon }}</div>
+          <div class="game-info">
+            <div class="game-name">{{ game.name }}</div>
+            <div class="game-description">{{ game.description }}</div>
+            <div class="game-details">
+              <span class="players">{{ game.minPlayers }}-{{ game.maxPlayers }} joueurs</span>
+              <span class="duration">{{ game.duration }}</span>
+            </div>
+          </div>
           <div class="construction-badge" *ngIf="game.isUnderConstruction">
             🚧 En travaux
           </div>
         </div>
       </div>
 
+      <!-- QUESTIONING Section -->
+      <div class="section-header" style="margin-top: 30px;">
+        <h2>QUESTIONING</h2>
+        <span class="games-count">{{ getGamesByCategory('questioning').length }} jeu{{ getGamesByCategory('questioning').length > 1 ? 'x' : '' }}</span>
+      </div>
+
+      <div class="games-scroll" *ngIf="getGamesByCategory('questioning').length > 0 && !selectedGame">
+        <div 
+          class="game-button" 
+          [class.under-construction]="game.isUnderConstruction"
+          *ngFor="let game of getGamesByCategory('questioning')"
+          (click)="selectGame(game)">
+          <div class="game-icon">{{ game.icon }}</div>
+          <div class="game-info">
+            <div class="game-name">{{ game.name }}</div>
+            <div class="game-description">{{ game.description }}</div>
+            <div class="game-details">
+              <span class="players">{{ game.minPlayers }}-{{ game.maxPlayers }} joueurs</span>
+              <span class="duration">{{ game.duration }}</span>
+            </div>
+          </div>
+          <div class="construction-badge" *ngIf="game.isUnderConstruction">
+            🚧 En travaux
+          </div>
+        </div>
+      </div>
+
+      <!-- Sub Games List -->
+      <div class="sub-games-scroll" *ngIf="selectedGame && selectedGame.type === 'collection'">
+        <div class="collection-header">
+          <h3>{{ selectedGame.name }}</h3>
+          <p>{{ selectedGame.description }}</p>
+        </div>
+        
+        <div class="sub-games-grid">
+          <div 
+            class="sub-game-button" 
+            *ngFor="let subGame of getSubGamesByGame(selectedGame)"
+            (click)="startSubGame(subGame)">
+            <div class="sub-game-icon">{{ subGame.icon }}</div>
+            <div class="sub-game-info">
+              <div class="sub-game-name">{{ subGame.name }}</div>
+              <div class="sub-game-description">{{ subGame.description }}</div>
+              <div class="sub-game-details">
+                <span class="players">{{ subGame.minPlayers }}-{{ subGame.maxPlayers }} joueurs</span>
+                <span class="duration">{{ subGame.duration }}</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <!-- Empty State -->
-      <div class="empty-state" *ngIf="getGamesByCategory(selectedCategory).length === 0">
+      <div class="empty-state" *ngIf="getGamesByCategory('taz').length === 0 && getGamesByCategory('questioning').length === 0">
         <div class="empty-icon">🎮</div>
-        <h3>Aucun jeu dans cette catégorie</h3>
+        <h3>Aucun jeu disponible</h3>
         <p>Les jeux seront ajoutés prochainement</p>
       </div>
     </section>

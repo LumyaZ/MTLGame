@@ -1,0 +1,70 @@
+{
+  "id": "questioning",
+  "name": "Questioning",
+  "description": "Une collection de jeux de questions pour découvrir vos préférences, débattre et mieux vous connaître",
+  "category": "Social",
+  "minPlayers": 2,
+  "maxPlayers": 10,
+  "duration": "15-45 min",
+  "subGames": [
+    {
+      "id": "tu-preferes",
+      "name": "Tu préfères",
+      "description": "Choisissez entre deux options parfois difficiles et découvrez les préférences de chacun",
+      "dataFile": "tu-preferes.json",
+      "instructions": "Chaque joueur doit choisir entre deux options présentées. Expliquez votre choix et découvrez ceux des autres !",
+      "minPlayers": 2,
+      "maxPlayers": 10,
+      "duration": "10-20 min",
+      "category": "Préférences"
+    },
+    {
+      "id": "debats",
+      "name": "Débats",
+      "description": "Débattez sur des sujets controversés et découvrez les opinions de chacun",
+      "dataFile": "debats.json",
+      "instructions": "Un sujet de débat est présenté. Chaque joueur donne son opinion et explique pourquoi. Respectez les opinions des autres !",
+      "minPlayers": 3,
+      "maxPlayers": 8,
+      "duration": "15-30 min",
+      "category": "Discussion"
+    },
+    {
+      "id": "red-flags",
+      "name": "Red Flags",
+      "description": "Identifiez les comportements problématiques dans les relations",
+      "dataFile": "red-flags.json",
+      "instructions": "Une situation est décrite. Dites si c'est un red flag (comportement problématique) et expliquez pourquoi.",
+      "minPlayers": 2,
+      "maxPlayers": 8,
+      "duration": "10-20 min",
+      "category": "Relations"
+    },
+    {
+      "id": "green-flags",
+      "name": "Green Flags",
+      "description": "Identifiez les comportements positifs dans les relations",
+      "dataFile": "green-flags.json",
+      "instructions": "Une situation est décrite. Dites si c'est un green flag (comportement positif) et expliquez pourquoi.",
+      "minPlayers": 2,
+      "maxPlayers": 8,
+      "duration": "10-20 min",
+      "category": "Relations"
+    },
+    {
+      "id": "qui-pourrait",
+      "name": "Qui pourrait",
+      "description": "Découvrez qui parmi vous pourrait le mieux accomplir certaines tâches",
+      "dataFile": "qui-pourrait.json",
+      "instructions": "Une question 'Qui pourrait...' est posée. Votez pour la personne que vous pensez la plus capable et expliquez votre choix.",
+      "minPlayers": 3,
+      "maxPlayers": 10,
+      "duration": "10-25 min",
+      "category": "Connaissance"
+    }
+  ],
+  "instructions": "Choisissez un sous-jeu et suivez ses règles spécifiques. Tous ces jeux visent à mieux se connaître et à créer des discussions intéressantes.",
+  "materials": ["Aucun matériel requis"],
+  "difficulty": "Facile",
+  "image": "assets/images/questioning.jpg"
+} 

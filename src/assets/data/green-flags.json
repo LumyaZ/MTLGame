@@ -1,0 +1,602 @@
+[
+  {
+    "id": 1,
+    "situation": "Il/elle respecte tes limites et ton espace personnel",
+    "category": "Relations",
+    "importance": "Élevée"
+  },
+  {
+    "id": 2,
+    "situation": "Il/elle s'excuse sincèrement quand il/elle a tort",
+    "category": "Communication",
+    "importance": "Élevée"
+  },
+  {
+    "id": 3,
+    "situation": "Il/elle te soutient dans tes projets et tes rêves",
+    "category": "Relations",
+    "importance": "Élevée"
+  },
+  {
+    "id": 4,
+    "situation": "Il/elle te présente à ses amis et sa famille avec fierté",
+    "category": "Relations",
+    "importance": "Moyenne"
+  },
+  {
+    "id": 5,
+    "situation": "Il/elle respecte tes opinions même quand il/elle n'est pas d'accord",
+    "category": "Respect",
+    "importance": "Élevée"
+  },
+  {
+    "id": 6,
+    "situation": "Il/elle t'écoute activement sans t'interrompre",
+    "category": "Communication",
+    "importance": "Élevée"
+  },
+  {
+    "id": 7,
+    "situation": "Il/elle te fait des compliments sincères et spécifiques",
+    "category": "Relations",
+    "importance": "Moyenne"
+  },
+  {
+    "id": 8,
+    "situation": "Il/elle tient ses promesses et ses engagements",
+    "category": "Fiabilité",
+    "importance": "Élevée"
+  },
+  {
+    "id": 9,
+    "situation": "Il/elle te défend devant les autres",
+    "category": "Relations",
+    "importance": "Moyenne"
+  },
+  {
+    "id": 10,
+    "situation": "Il/elle partage ses sentiments et ses vulnérabilités",
+    "category": "Communication",
+    "importance": "Moyenne"
+  },
+  {
+    "id": 11,
+    "situation": "Il/elle te fait des surprises attentionnées",
+    "category": "Relations",
+    "importance": "Moyenne"
+  },
+  {
+    "id": 12,
+    "situation": "Il/elle respecte tes centres d'intérêt même s'il/elle ne les partage pas",
+    "category": "Relations",
+    "importance": "Moyenne"
+  },
+  {
+    "id": 13,
+    "situation": "Il/elle te remercie pour les petites choses",
+    "category": "Relations",
+    "importance": "Moyenne"
+  },
+  {
+    "id": 14,
+    "situation": "Il/elle te donne de l'espace quand tu en as besoin",
+    "category": "Relations",
+    "importance": "Élevée"
+  },
+  {
+    "id": 15,
+    "situation": "Il/elle te fait confiance sans être possessif/ve",
+    "category": "Relations",
+    "importance": "Élevée"
+  },
+  {
+    "id": 16,
+    "situation": "Il/elle te soutient dans les moments difficiles",
+    "category": "Relations",
+    "importance": "Élevée"
+  },
+  {
+    "id": 17,
+    "situation": "Il/elle accepte la critique constructive avec humilité",
+    "category": "Communication",
+    "importance": "Moyenne"
+  },
+  {
+    "id": 18,
+    "situation": "Il/elle te fait sentir en sécurité émotionnellement",
+    "category": "Relations",
+    "importance": "Élevée"
+  },
+  {
+    "id": 19,
+    "situation": "Il/elle te respecte même en désaccord",
+    "category": "Respect",
+    "importance": "Élevée"
+  },
+  {
+    "id": 20,
+    "situation": "Il/elle te fait des compliments sur ta personnalité, pas juste ton apparence",
+    "category": "Relations",
+    "importance": "Moyenne"
+  },
+  {
+    "id": 21,
+    "situation": "Il/elle te soutient dans tes décisions importantes",
+    "category": "Relations",
+    "importance": "Élevée"
+  },
+  {
+    "id": 22,
+    "situation": "Il/elle te fait rire et te remonte le moral",
+    "category": "Relations",
+    "importance": "Moyenne"
+  },
+  {
+    "id": 23,
+    "situation": "Il/elle te traite comme son égal(e)",
+    "category": "Relations",
+    "importance": "Élevée"
+  },
+  {
+    "id": 24,
+    "situation": "Il/elle te fait sentir valorisé(e) et apprécié(e)",
+    "category": "Relations",
+    "importance": "Élevée"
+  },
+  {
+    "id": 25,
+    "situation": "Il/elle te donne de l'espace pour tes amitiés",
+    "category": "Relations",
+    "importance": "Moyenne"
+  },
+  {
+    "id": 26,
+    "situation": "Il/elle te soutient dans tes objectifs personnels",
+    "category": "Relations",
+    "importance": "Élevée"
+  },
+  {
+    "id": 27,
+    "situation": "Il/elle te fait sentir que tu peux être toi-même",
+    "category": "Relations",
+    "importance": "Élevée"
+  },
+  {
+    "id": 28,
+    "situation": "Il/elle te respecte même quand il/elle est en colère",
+    "category": "Relations",
+    "importance": "Élevée"
+  },
+  {
+    "id": 29,
+    "situation": "Il/elle te fait sentir que tu es une priorité dans sa vie",
+    "category": "Relations",
+    "importance": "Moyenne"
+  },
+  {
+    "id": 30,
+    "situation": "Il/elle te soutient dans tes moments de vulnérabilité",
+    "category": "Relations",
+    "importance": "Élevée"
+  },
+  {
+    "id": 31,
+    "situation": "Il/elle te respecte tes préférences sexuelles",
+    "category": "Relations",
+    "importance": "Élevée"
+  },
+  {
+    "id": 32,
+    "situation": "Il/elle te fait des blagues qui te font rire",
+    "category": "Relations",
+    "importance": "Moyenne"
+  },
+  {
+    "id": 33,
+    "situation": "Il/elle respecte tes limites physiques",
+    "category": "Relations",
+    "importance": "Élevée"
+  },
+  {
+    "id": 34,
+    "situation": "Il/elle te complimente sur ton apparence sans te faire sentir objet",
+    "category": "Relations",
+    "importance": "Moyenne"
+  },
+  {
+    "id": 35,
+    "situation": "Il/elle respecte tes choix vestimentaires",
+    "category": "Relations",
+    "importance": "Moyenne"
+  },
+  {
+    "id": 36,
+    "situation": "Il/elle te prend au sérieux quand tu exprimes tes émotions",
+    "category": "Relations",
+    "importance": "Moyenne"
+  },
+  {
+    "id": 37,
+    "situation": "Il/elle respecte tes préférences alimentaires",
+    "category": "Relations",
+    "importance": "Moyenne"
+  },
+  {
+    "id": 38,
+    "situation": "Il/elle te soutient dans tes choix de carrière",
+    "category": "Relations",
+    "importance": "Moyenne"
+  },
+  {
+    "id": 39,
+    "situation": "Il/elle respecte tes choix de vie",
+    "category": "Relations",
+    "importance": "Moyenne"
+  },
+  {
+    "id": 40,
+    "situation": "Il/elle te fait sentir que tes besoins sont importants",
+    "category": "Relations",
+    "importance": "Moyenne"
+  },
+  {
+    "id": 41,
+    "situation": "Il/elle respecte tes préférences de divertissement",
+    "category": "Relations",
+    "importance": "Moyenne"
+  },
+  {
+    "id": 42,
+    "situation": "Il/elle te complimente sur tes choix de musique",
+    "category": "Relations",
+    "importance": "Moyenne"
+  },
+  {
+    "id": 43,
+    "situation": "Il/elle respecte tes préférences de films",
+    "category": "Relations",
+    "importance": "Moyenne"
+  },
+  {
+    "id": 44,
+    "situation": "Il/elle te fait sentir que tes différences sont une force",
+    "category": "Relations",
+    "importance": "Moyenne"
+  },
+  {
+    "id": 45,
+    "situation": "Il/elle respecte tes choix de lecture",
+    "category": "Relations",
+    "importance": "Moyenne"
+  },
+  {
+    "id": 46,
+    "situation": "Il/elle te complimente sur tes passe-temps",
+    "category": "Relations",
+    "importance": "Moyenne"
+  },
+  {
+    "id": 47,
+    "situation": "Il/elle respecte tes préférences de voyage",
+    "category": "Relations",
+    "importance": "Moyenne"
+  },
+  {
+    "id": 48,
+    "situation": "Il/elle te fait sentir que tes traditions sont respectées",
+    "category": "Relations",
+    "importance": "Moyenne"
+  },
+  {
+    "id": 49,
+    "situation": "Il/elle respecte tes choix de décoration",
+    "category": "Relations",
+    "importance": "Moyenne"
+  },
+  {
+    "id": 50,
+    "situation": "Il/elle te complimente sur tes choix de sport",
+    "category": "Relations",
+    "importance": "Moyenne"
+  },
+  {
+    "id": 51,
+    "situation": "Il/elle respecte tes préférences de cuisine",
+    "category": "Relations",
+    "importance": "Moyenne"
+  },
+  {
+    "id": 52,
+    "situation": "Il/elle te fait sentir que ton modernisme est apprécié",
+    "category": "Relations",
+    "importance": "Moyenne"
+  },
+  {
+    "id": 53,
+    "situation": "Il/elle respecte tes choix de technologie",
+    "category": "Relations",
+    "importance": "Moyenne"
+  },
+  {
+    "id": 54,
+    "situation": "Il/elle te complimente sur tes choix de marques",
+    "category": "Relations",
+    "importance": "Moyenne"
+  },
+  {
+    "id": 55,
+    "situation": "Il/elle respecte tes préférences de sorties",
+    "category": "Relations",
+    "importance": "Moyenne"
+  },
+  {
+    "id": 56,
+    "situation": "Il/elle te fait sentir que ta sociabilité est une qualité",
+    "category": "Relations",
+    "importance": "Moyenne"
+  },
+  {
+    "id": 57,
+    "situation": "Il/elle respecte tes choix de réseaux sociaux",
+    "category": "Relations",
+    "importance": "Moyenne"
+  },
+  {
+    "id": 58,
+    "situation": "Il/elle te complimente sur tes choix de jeux",
+    "category": "Relations",
+    "importance": "Moyenne"
+  },
+  {
+    "id": 59,
+    "situation": "Il/elle respecte tes préférences de musique",
+    "category": "Relations",
+    "importance": "Moyenne"
+  },
+  {
+    "id": 60,
+    "situation": "Il/elle te fait sentir que ta créativité est valorisée",
+    "category": "Relations",
+    "importance": "Moyenne"
+  },
+  {
+    "id": 61,
+    "situation": "Il/elle respecte tes choix de films",
+    "category": "Relations",
+    "importance": "Moyenne"
+  },
+  {
+    "id": 62,
+    "situation": "Il/elle te complimente sur tes choix de séries",
+    "category": "Relations",
+    "importance": "Moyenne"
+  },
+  {
+    "id": 63,
+    "situation": "Il/elle respecte tes préférences de podcasts",
+    "category": "Relations",
+    "importance": "Moyenne"
+  },
+  {
+    "id": 64,
+    "situation": "Il/elle te fait sentir que ton intellect est apprécié",
+    "category": "Relations",
+    "importance": "Moyenne"
+  },
+  {
+    "id": 65,
+    "situation": "Il/elle respecte tes choix de livres",
+    "category": "Relations",
+    "importance": "Moyenne"
+  },
+  {
+    "id": 66,
+    "situation": "Il/elle te complimente sur tes choix de magazines",
+    "category": "Relations",
+    "importance": "Moyenne"
+  },
+  {
+    "id": 67,
+    "situation": "Il/elle respecte tes préférences de blogs",
+    "category": "Relations",
+    "importance": "Moyenne"
+  },
+  {
+    "id": 68,
+    "situation": "Il/elle te fait sentir que ta connectivité est une force",
+    "category": "Relations",
+    "importance": "Moyenne"
+  },
+  {
+    "id": 69,
+    "situation": "Il/elle respecte tes choix de sites web",
+    "category": "Relations",
+    "importance": "Moyenne"
+  },
+  {
+    "id": 70,
+    "situation": "Il/elle te complimente sur tes choix d'applications",
+    "category": "Relations",
+    "importance": "Moyenne"
+  },
+  {
+    "id": 71,
+    "situation": "Il/elle respecte tes préférences de jeux vidéo",
+    "category": "Relations",
+    "importance": "Moyenne"
+  },
+  {
+    "id": 72,
+    "situation": "Il/elle te fait sentir que ta compétitivité est saine",
+    "category": "Relations",
+    "importance": "Moyenne"
+  },
+  {
+    "id": 73,
+    "situation": "Il/elle respecte tes choix de jeux de société",
+    "category": "Relations",
+    "importance": "Moyenne"
+  },
+  {
+    "id": 74,
+    "situation": "Il/elle te complimente sur tes choix de puzzles",
+    "category": "Relations",
+    "importance": "Moyenne"
+  },
+  {
+    "id": 75,
+    "situation": "Il/elle respecte tes préférences de jeux de cartes",
+    "category": "Relations",
+    "importance": "Moyenne"
+  },
+  {
+    "id": 76,
+    "situation": "Il/elle te fait sentir que ta stratégie est admirable",
+    "category": "Relations",
+    "importance": "Moyenne"
+  },
+  {
+    "id": 77,
+    "situation": "Il/elle respecte tes choix de jeux de rôle",
+    "category": "Relations",
+    "importance": "Moyenne"
+  },
+  {
+    "id": 78,
+    "situation": "Il/elle te complimente sur tes choix de jeux de plateau",
+    "category": "Relations",
+    "importance": "Moyenne"
+  },
+  {
+    "id": 79,
+    "situation": "Il/elle respecte tes préférences de jeux en ligne",
+    "category": "Relations",
+    "importance": "Moyenne"
+  },
+  {
+    "id": 80,
+    "situation": "Il/elle te fait sentir que tes passions sont saines",
+    "category": "Relations",
+    "importance": "Moyenne"
+  },
+  {
+    "id": 81,
+    "situation": "Il/elle respecte tes choix de jeux mobiles",
+    "category": "Relations",
+    "importance": "Moyenne"
+  },
+  {
+    "id": 82,
+    "situation": "Il/elle te complimente sur tes choix de jeux de hasard",
+    "category": "Relations",
+    "importance": "Moyenne"
+  },
+  {
+    "id": 83,
+    "situation": "Il/elle respecte tes préférences de jeux de réflexion",
+    "category": "Relations",
+    "importance": "Moyenne"
+  },
+  {
+    "id": 84,
+    "situation": "Il/elle te fait sentir que ta logique est appréciée",
+    "category": "Relations",
+    "importance": "Moyenne"
+  },
+  {
+    "id": 85,
+    "situation": "Il/elle respecte tes choix de jeux d'action",
+    "category": "Relations",
+    "importance": "Moyenne"
+  },
+  {
+    "id": 86,
+    "situation": "Il/elle te complimente sur tes choix de jeux d'aventure",
+    "category": "Relations",
+    "importance": "Moyenne"
+  },
+  {
+    "id": 87,
+    "situation": "Il/elle respecte tes préférences de jeux de simulation",
+    "category": "Relations",
+    "importance": "Moyenne"
+  },
+  {
+    "id": 88,
+    "situation": "Il/elle te fait sentir que ton réalisme est une qualité",
+    "category": "Relations",
+    "importance": "Moyenne"
+  },
+  {
+    "id": 89,
+    "situation": "Il/elle respecte tes choix de jeux de sport",
+    "category": "Relations",
+    "importance": "Moyenne"
+  },
+  {
+    "id": 90,
+    "situation": "Il/elle te complimente sur tes choix de jeux de course",
+    "category": "Relations",
+    "importance": "Moyenne"
+  },
+  {
+    "id": 91,
+    "situation": "Il/elle respecte tes préférences de jeux de combat",
+    "category": "Relations",
+    "importance": "Moyenne"
+  },
+  {
+    "id": 92,
+    "situation": "Il/elle te fait sentir que ton énergie est appréciée",
+    "category": "Relations",
+    "importance": "Moyenne"
+  },
+  {
+    "id": 93,
+    "situation": "Il/elle respecte tes choix de jeux de tir",
+    "category": "Relations",
+    "importance": "Moyenne"
+  },
+  {
+    "id": 94,
+    "situation": "Il/elle te complimente sur tes choix de jeux de guerre",
+    "category": "Relations",
+    "importance": "Moyenne"
+  },
+  {
+    "id": 95,
+    "situation": "Il/elle respecte tes préférences de jeux d'horreur",
+    "category": "Relations",
+    "importance": "Moyenne"
+  },
+  {
+    "id": 96,
+    "situation": "Il/elle te fait sentir que ta sensibilité est une force",
+    "category": "Relations",
+    "importance": "Moyenne"
+  },
+  {
+    "id": 97,
+    "situation": "Il/elle respecte tes choix de jeux de puzzle",
+    "category": "Relations",
+    "importance": "Moyenne"
+  },
+  {
+    "id": 98,
+    "situation": "Il/elle te complimente sur tes choix de jeux de mots",
+    "category": "Relations",
+    "importance": "Moyenne"
+  },
+  {
+    "id": 99,
+    "situation": "Il/elle respecte tes préférences de jeux de quiz",
+    "category": "Relations",
+    "importance": "Moyenne"
+  },
+  {
+    "id": 100,
+    "situation": "Il/elle te fait sentir que ton intelligence est valorisée",
+    "category": "Relations",
+    "importance": "Moyenne"
+  }
+] 

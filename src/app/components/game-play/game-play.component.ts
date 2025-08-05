@@ -4,12 +4,19 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { PlayerService } from '../../services/player.service';
 import { HttpClient } from '@angular/common/http';
 import questionsData from '../../../assets/data/never-have-i-ever-hot.json';
+import tuPreferesData from '../../../assets/data/tu-preferes.json';
+import debatsData from '../../../assets/data/debats.json';
+import redFlagsData from '../../../assets/data/red-flags.json';
+import greenFlagsData from '../../../assets/data/green-flags.json';
+import quiPourraitData from '../../../assets/data/qui-pourrait.json';
 
 export interface GameSettings {
   gameId: number;
   gameName: string;
   questionCount: 10 | 25 | 50 | 75 | 100;
   bonusRound: boolean;
+  collection?: string;
+  subGame?: string;
 }
 
 export interface BonusQuestion {
@@ -27,6 +34,8 @@ export interface BonusQuestion {
 export class GamePlayComponent implements OnInit {
   gameId: number = 0;
   gameName: string = '';
+  collection: string = '';
+  subGame: string = '';
   players: any[] = [];
   questions: any[] = [];
   usedQuestions: Set<number> = new Set();
@@ -76,8 +85,19 @@ export class GamePlayComponent implements OnInit {
 
   ngOnInit(): void {
     this.route.params.subscribe(params => {
-      this.gameId = +params['id'];
-      this.loadGameSettings();
+      // Gérer les paramètres pour les jeux simples et les collections
+      if (params['collection'] && params['subGame']) {
+        // C'est un sous-jeu d'une collection
+        this.collection = params['collection'];
+        this.subGame = params['subGame'];
+        this.gameId = this.getSubGameId(this.collection, this.subGame);
+        this.loadSubGameSettings();
+      } else {
+        // C'est un jeu simple
+        this.gameId = +params['id'];
+        this.loadGameSettings();
+      }
+      
       this.loadGameInfo();
       this.loadQuestions();
     });
@@ -85,6 +105,21 @@ export class GamePlayComponent implements OnInit {
     this.playerService.getPlayers().subscribe(players => {
       this.players = players.filter(p => p.isActive);
     });
+  }
+
+  private getSubGameId(collection: string, subGame: string): number {
+    // Mapping des sous-jeux vers des IDs uniques
+    const subGameIds: { [key: string]: { [key: string]: number } } = {
+      'questioning': {
+        'tu-preferes': 201,
+        'debats': 202,
+        'red-flags': 203,
+        'green-flags': 204,
+        'qui-pourrait': 205
+      }
+    };
+    
+    return subGameIds[collection]?.[subGame] || 0;
   }
 
   loadGameSettings(): void {
@@ -109,21 +144,106 @@ export class GamePlayComponent implements OnInit {
     }
   }
 
+  loadSubGameSettings(): void {
+    // Récupérer les paramètres du sous-jeu depuis le localStorage
+    const settingsKey = `game-settings-${this.collection}-${this.subGame}`;
+    const savedSettings = localStorage.getItem(settingsKey);
+    
+    if (savedSettings) {
+      try {
+        this.gameSettings = JSON.parse(savedSettings);
+        if (this.gameSettings) {
+          this.maxQuestions = this.gameSettings.questionCount;
+          console.log('Settings chargés:', this.gameSettings);
+        }
+      } catch (error) {
+        console.error('Erreur lors du chargement des settings:', error);
+        this.maxQuestions = 50; // Valeur par défaut
+      }
+    } else {
+      console.warn('Aucun settings trouvé, utilisation des valeurs par défaut');
+      this.maxQuestions = 50; // Valeur par défaut
+    }
+  }
+
   loadGameInfo(): void {
-    // Pour l'instant, on ne gère que le jeu "J'ai / Je n'ai jamais"
-    this.gameName = "J'ai / Je n'ai jamais";
+    // Charger les informations du jeu selon l'ID ou le sous-jeu
+    if (this.collection && this.subGame) {
+      const subGameNames: { [key: string]: string } = {
+        'tu-preferes': 'Tu préfères',
+        'debats': 'Débats',
+        'red-flags': 'Red Flags',
+        'green-flags': 'Green Flags',
+        'qui-pourrait': 'Qui pourrait'
+      };
+      this.gameName = subGameNames[this.subGame] || 'Sous-jeu';
+    } else {
+      // Pour l'instant, on ne gère que le jeu "J'ai / Je n'ai jamais"
+      this.gameName = "J'ai / Je n'ai jamais";
+    }
   }
 
   loadQuestions(): void {
-    // Charger les questions directement depuis le fichier JSON importé
     try {
-      // Convertir les chaînes en objets avec propriété question
-      this.questions = (questionsData as string[]).map(q => ({ question: q }));
+      if (this.collection && this.subGame) {
+        // Charger les questions selon le sous-jeu
+        this.loadSubGameQuestions();
+      } else {
+        // Charger les questions pour les jeux simples
+        this.loadSimpleGameQuestions();
+      }
+      
       this.totalQuestions = this.questions.length;
       this.shuffleQuestions();
     } catch (error) {
       console.error('Erreur lors du chargement des questions:', error);
     }
+  }
+
+  private loadSubGameQuestions(): void {
+    switch (this.subGame) {
+      case 'tu-preferes':
+        this.questions = (tuPreferesData as any[]).map(q => ({
+          question: `${q.question} ${q.optionA} ou ${q.optionB} ?`,
+          category: q.category
+        }));
+        break;
+      case 'debats':
+        this.questions = (debatsData as any[]).map(q => ({
+          question: q.question,
+          category: q.category,
+          difficulty: q.difficulty
+        }));
+        break;
+      case 'red-flags':
+        this.questions = (redFlagsData as any[]).map(q => ({
+          question: q.situation,
+          category: q.category,
+          severity: q.severity
+        }));
+        break;
+      case 'green-flags':
+        this.questions = (greenFlagsData as any[]).map(q => ({
+          question: q.situation,
+          category: q.category,
+          importance: q.importance
+        }));
+        break;
+      case 'qui-pourrait':
+        this.questions = (quiPourraitData as any[]).map(q => ({
+          question: q.question,
+          category: q.category,
+          difficulty: q.difficulty
+        }));
+        break;
+      default:
+        this.questions = [];
+    }
+  }
+
+  private loadSimpleGameQuestions(): void {
+    // Charger les questions directement depuis le fichier JSON importé
+    this.questions = (questionsData as string[]).map(q => ({ question: q }));
   }
 
   shuffleQuestions(): void {
@@ -269,6 +389,10 @@ export class GamePlayComponent implements OnInit {
   }
 
   goBack(): void {
-    this.router.navigate(['/settings', this.gameId]);
+    if (this.collection && this.subGame) {
+      this.router.navigate(['/settings', this.collection, this.subGame]);
+    } else {
+      this.router.navigate(['/settings', this.gameId]);
+    }
   }
 } 

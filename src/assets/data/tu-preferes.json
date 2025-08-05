@@ -1,0 +1,702 @@
+[
+  {
+    "id": 1,
+    "question": "Tu préfères...",
+    "optionA": "Être invisible pendant 1 an",
+    "optionB": "Pouvoir voler pendant 1 mois",
+    "category": "Pouvoirs"
+  },
+  {
+    "id": 2,
+    "question": "Tu préfères...",
+    "optionA": "Vivre dans le passé (années 80)",
+    "optionB": "Vivre dans le futur (année 2100)",
+    "category": "Temps"
+  },
+  {
+    "id": 3,
+    "question": "Tu préfères...",
+    "optionA": "Être riche mais célèbre pour quelque chose d'embarrassant",
+    "optionB": "Être pauvre mais respecté par tout le monde",
+    "category": "Statut social"
+  },
+  {
+    "id": 4,
+    "question": "Tu préfères...",
+    "optionA": "Ne jamais dormir",
+    "optionB": "Ne jamais manger",
+    "category": "Survie"
+  },
+  {
+    "id": 5,
+    "question": "Tu préfères...",
+    "optionA": "Lire les pensées de tout le monde",
+    "optionB": "Que tout le monde puisse lire tes pensées",
+    "category": "Pouvoirs"
+  },
+  {
+    "id": 6,
+    "question": "Tu préfères...",
+    "optionA": "Voyager partout dans le monde",
+    "optionB": "Vivre dans le pays de tes rêves",
+    "category": "Voyage"
+  },
+  {
+    "id": 7,
+    "question": "Tu préfères...",
+    "optionA": "Être le meilleur dans un domaine que tu détestes",
+    "optionB": "Être moyen dans un domaine que tu adores",
+    "category": "Passion"
+  },
+  {
+    "id": 8,
+    "question": "Tu préfères...",
+    "optionA": "Avoir 10 enfants",
+    "optionB": "Ne jamais avoir d'enfants",
+    "category": "Famille"
+  },
+  {
+    "id": 9,
+    "question": "Tu préfères...",
+    "optionA": "Être très intelligent mais laid",
+    "optionB": "Être très beau/belle mais stupide",
+    "category": "Apparence"
+  },
+  {
+    "id": 10,
+    "question": "Tu préfères...",
+    "optionA": "Vivre dans un monde sans musique",
+    "optionB": "Vivre dans un monde sans films",
+    "category": "Divertissement"
+  },
+  {
+    "id": 11,
+    "question": "Tu préfères...",
+    "optionA": "Être le héros d'un film d'action",
+    "optionB": "Être le méchant d'un film d'horreur",
+    "category": "Cinéma"
+  },
+  {
+    "id": 12,
+    "question": "Tu préfères...",
+    "optionA": "Avoir un super pouvoir mais le garder secret",
+    "optionB": "Être normal mais que tout le monde pense que tu as des super pouvoirs",
+    "category": "Pouvoirs"
+  },
+  {
+    "id": 13,
+    "question": "Tu préfères...",
+    "optionA": "Être immortel mais seul",
+    "optionB": "Vivre une vie normale avec des amis",
+    "category": "Vie"
+  },
+  {
+    "id": 14,
+    "question": "Tu préfères...",
+    "optionA": "Être très petit (1m)",
+    "optionB": "Être très grand (2m50)",
+    "category": "Apparence"
+  },
+  {
+    "id": 15,
+    "question": "Tu préfères...",
+    "optionA": "Avoir la capacité de parler aux animaux",
+    "optionB": "Avoir la capacité de parler toutes les langues humaines",
+    "category": "Communication"
+  },
+  {
+    "id": 16,
+    "question": "Tu préfères...",
+    "optionA": "Manger des glaces à vie",
+    "optionB": "Manger des pizzas à vie",
+    "category": "Cuisine"
+  },
+  {
+    "id": 17,
+    "question": "Tu préfères...",
+    "optionA": "Être un chat",
+    "optionB": "Être un chien",
+    "category": "Absurde"
+  },
+  {
+    "id": 18,
+    "question": "Tu préfères...",
+    "optionA": "Avoir des mains en forme de pieds",
+    "optionB": "Avoir des pieds en forme de mains",
+    "category": "Absurde"
+  },
+  {
+    "id": 19,
+    "question": "Tu préfères...",
+    "optionA": "Parler en rimes toute ta vie",
+    "optionB": "Chanter tout ce que tu dis",
+    "category": "Absurde"
+  },
+  {
+    "id": 20,
+    "question": "Tu préfères...",
+    "optionA": "Être un légume",
+    "optionB": "Être un fruit",
+    "category": "Absurde"
+  },
+  {
+    "id": 21,
+    "question": "Tu préfères...",
+    "optionA": "Avoir des cheveux qui poussent des fleurs",
+    "optionB": "Avoir des ongles qui brillent dans le noir",
+    "category": "Absurde"
+  },
+  {
+    "id": 22,
+    "question": "Tu préfères...",
+    "optionA": "Être un mime professionnel",
+    "optionB": "Être un clown de cirque",
+    "category": "Profession"
+  },
+  {
+    "id": 23,
+    "question": "Tu préfères...",
+    "optionA": "Vivre dans une maison en fromage",
+    "optionB": "Vivre dans une maison en chocolat",
+    "category": "Absurde"
+  },
+  {
+    "id": 24,
+    "question": "Tu préfères...",
+    "optionA": "Avoir un nombril qui parle",
+    "optionB": "Avoir des oreilles qui chantent",
+    "category": "Absurde"
+  },
+  {
+    "id": 25,
+    "question": "Tu préfères...",
+    "optionA": "Être un superhéros qui sauve les chats",
+    "optionB": "Être un superhéros qui plante des arbres",
+    "category": "Absurde"
+  },
+  {
+    "id": 26,
+    "question": "Tu préfères...",
+    "optionA": "Avoir des cheveux qui changent de couleur selon ton humeur",
+    "optionB": "Avoir des yeux qui projettent des films",
+    "category": "Absurde"
+  },
+  {
+    "id": 27,
+    "question": "Tu préfères...",
+    "optionA": "Être un ninja qui fait du yoga",
+    "optionB": "Être un samouraï qui fait de la danse",
+    "category": "Absurde"
+  },
+  {
+    "id": 28,
+    "question": "Tu préfères...",
+    "optionA": "Avoir un nez qui sent les émotions",
+    "optionB": "Avoir une langue qui goûte les couleurs",
+    "category": "Absurde"
+  },
+  {
+    "id": 29,
+    "question": "Tu préfères...",
+    "optionA": "Être un robot avec des sentiments",
+    "optionB": "Être un humain avec des circuits",
+    "category": "Science-fiction"
+  },
+  {
+    "id": 30,
+    "question": "Tu préfères...",
+    "optionA": "Avoir des doigts qui font de la musique",
+    "optionB": "Avoir des orteils qui dansent",
+    "category": "Absurde"
+  },
+  {
+    "id": 31,
+    "question": "Tu préfères...",
+    "optionA": "Être un vampire qui a peur du sang",
+    "optionB": "Être un loup-garou qui a peur des os",
+    "category": "Absurde"
+  },
+  {
+    "id": 32,
+    "question": "Tu préfères...",
+    "optionA": "Avoir des cheveux qui sont des serpents",
+    "optionB": "Avoir une barbe qui est une forêt",
+    "category": "Absurde"
+  },
+  {
+    "id": 33,
+    "question": "Tu préfères...",
+    "optionA": "Être un fantôme qui fait peur aux fantômes",
+    "optionB": "Être un zombie qui mange des légumes",
+    "category": "Absurde"
+  },
+  {
+    "id": 34,
+    "question": "Tu préfères...",
+    "optionA": "Avoir un nombril qui raconte des blagues",
+    "optionB": "Avoir des sourcils qui dansent",
+    "category": "Absurde"
+  },
+  {
+    "id": 35,
+    "question": "Tu préfères...",
+    "optionA": "Être un superhéros qui sauve les plantes",
+    "optionB": "Être un superhéros qui arrose les déserts",
+    "category": "Absurde"
+  },
+  {
+    "id": 36,
+    "question": "Tu préfères...",
+    "optionA": "Avoir des yeux qui pleurent du chocolat",
+    "optionB": "Avoir un nez qui éternue des paillettes",
+    "category": "Absurde"
+  },
+  {
+    "id": 37,
+    "question": "Tu préfères...",
+    "optionA": "Être un pirate qui a peur de l'eau",
+    "optionB": "Être un astronaute qui a peur du vide",
+    "category": "Absurde"
+  },
+  {
+    "id": 38,
+    "question": "Tu préfères...",
+    "optionA": "Avoir des cheveux qui sont des spaghettis",
+    "optionB": "Avoir une barbe qui est du coton",
+    "category": "Absurde"
+  },
+  {
+    "id": 39,
+    "question": "Tu préfères...",
+    "optionA": "Être un magicien qui fait des tours ratés",
+    "optionB": "Être un sorcier qui ne sait pas lire",
+    "category": "Absurde"
+  },
+  {
+    "id": 40,
+    "question": "Tu préfères...",
+    "optionA": "Avoir un nombril qui chante l'opéra",
+    "optionB": "Avoir des oreilles qui font du rap",
+    "category": "Absurde"
+  },
+  {
+    "id": 41,
+    "question": "Tu préfères...",
+    "optionA": "Être un dragon qui a peur du feu",
+    "optionB": "Être un phénix qui a peur de renaître",
+    "category": "Absurde"
+  },
+  {
+    "id": 42,
+    "question": "Tu préfères...",
+    "optionA": "Avoir des yeux qui voient en noir et blanc",
+    "optionB": "Avoir des oreilles qui entendent en couleurs",
+    "category": "Absurde"
+  },
+  {
+    "id": 43,
+    "question": "Tu préfères...",
+    "optionA": "Être un superhéros qui sauve les poubelles",
+    "optionB": "Être un superhéros qui recycle les déchets",
+    "category": "Absurde"
+  },
+  {
+    "id": 44,
+    "question": "Tu préfères...",
+    "optionA": "Avoir des cheveux qui sont des champignons",
+    "optionB": "Avoir une barbe qui est de la mousse",
+    "category": "Absurde"
+  },
+  {
+    "id": 45,
+    "question": "Tu préfères...",
+    "optionA": "Être un vampire qui boit du jus d'orange",
+    "optionB": "Être un loup-garou qui mange des carottes",
+    "category": "Absurde"
+  },
+  {
+    "id": 46,
+    "question": "Tu préfères...",
+    "optionA": "Avoir un nombril qui fait des bulles",
+    "optionB": "Avoir des sourcils qui font des vagues",
+    "category": "Absurde"
+  },
+  {
+    "id": 47,
+    "question": "Tu préfères...",
+    "optionA": "Être un fantôme qui fait des blagues",
+    "optionB": "Être un zombie qui fait du yoga",
+    "category": "Absurde"
+  },
+  {
+    "id": 48,
+    "question": "Tu préfères...",
+    "optionA": "Avoir des yeux qui pleurent du café",
+    "optionB": "Avoir un nez qui éternue du thé",
+    "category": "Absurde"
+  },
+  {
+    "id": 49,
+    "question": "Tu préfères...",
+    "optionA": "Être un pirate qui navigue sur un canoë",
+    "optionB": "Être un astronaute qui voyage en trottinette",
+    "category": "Absurde"
+  },
+  {
+    "id": 50,
+    "question": "Tu préfères...",
+    "optionA": "Avoir des cheveux qui sont des nouilles",
+    "optionB": "Avoir une barbe qui est de la laine",
+    "category": "Absurde"
+  },
+  {
+    "id": 51,
+    "question": "Tu préfères...",
+    "optionA": "Être un magicien qui fait des tours de cartes",
+    "optionB": "Être un sorcier qui fait des potions",
+    "category": "Fantasy"
+  },
+  {
+    "id": 52,
+    "question": "Tu préfères...",
+    "optionA": "Avoir un nombril qui chante du jazz",
+    "optionB": "Avoir des oreilles qui font du rock",
+    "category": "Absurde"
+  },
+  {
+    "id": 53,
+    "question": "Tu préfères...",
+    "optionA": "Être un dragon qui fait du tricot",
+    "optionB": "Être un phénix qui fait de la couture",
+    "category": "Absurde"
+  },
+  {
+    "id": 54,
+    "question": "Tu préfères...",
+    "optionA": "Avoir des yeux qui voient en 3D",
+    "optionB": "Avoir des oreilles qui entendent en stéréo",
+    "category": "Absurde"
+  },
+  {
+    "id": 55,
+    "question": "Tu préfères...",
+    "optionA": "Être un superhéros qui sauve les insectes",
+    "optionB": "Être un superhéros qui protège les araignées",
+    "category": "Absurde"
+  },
+  {
+    "id": 56,
+    "question": "Tu préfères...",
+    "optionA": "Avoir des cheveux qui sont des algues",
+    "optionB": "Avoir une barbe qui est du sable",
+    "category": "Absurde"
+  },
+  {
+    "id": 57,
+    "question": "Tu préfères...",
+    "optionA": "Être un vampire qui boit du lait",
+    "optionB": "Être un loup-garou qui mange des épinards",
+    "category": "Absurde"
+  },
+  {
+    "id": 58,
+    "question": "Tu préfères...",
+    "optionA": "Avoir un nombril qui fait des rimes",
+    "optionB": "Avoir des sourcils qui font des poèmes",
+    "category": "Absurde"
+  },
+  {
+    "id": 59,
+    "question": "Tu préfères...",
+    "optionA": "Être un fantôme qui fait de la peinture",
+    "optionB": "Être un zombie qui fait de la sculpture",
+    "category": "Absurde"
+  },
+  {
+    "id": 60,
+    "question": "Tu préfères...",
+    "optionA": "Avoir des yeux qui pleurent du miel",
+    "optionB": "Avoir un nez qui éternue du sirop",
+    "category": "Absurde"
+  },
+  {
+    "id": 61,
+    "question": "Tu préfères...",
+    "optionA": "Être un pirate qui navigue sur un radeau",
+    "optionB": "Être un astronaute qui voyage en vélo",
+    "category": "Absurde"
+  },
+  {
+    "id": 62,
+    "question": "Tu préfères...",
+    "optionA": "Avoir des cheveux qui sont des pâtes",
+    "optionB": "Avoir une barbe qui est du coton",
+    "category": "Absurde"
+  },
+  {
+    "id": 63,
+    "question": "Tu préfères...",
+    "optionA": "Être un magicien qui fait des tours de magie",
+    "optionB": "Être un sorcier qui fait des sorts",
+    "category": "Fantasy"
+  },
+  {
+    "id": 64,
+    "question": "Tu préfères...",
+    "optionA": "Avoir un nombril qui chante du blues",
+    "optionB": "Avoir des oreilles qui font du reggae",
+    "category": "Absurde"
+  },
+  {
+    "id": 65,
+    "question": "Tu préfères...",
+    "optionA": "Être un dragon qui fait de la poterie",
+    "optionB": "Être un phénix qui fait du macramé",
+    "category": "Absurde"
+  },
+  {
+    "id": 66,
+    "question": "Tu préfères...",
+    "optionA": "Avoir des yeux qui voient en noir et blanc",
+    "optionB": "Avoir des oreilles qui entendent en couleurs",
+    "category": "Absurde"
+  },
+  {
+    "id": 67,
+    "question": "Tu préfères...",
+    "optionA": "Être un superhéros qui sauve les vers de terre",
+    "optionB": "Être un superhéros qui protège les fourmis",
+    "category": "Absurde"
+  },
+  {
+    "id": 68,
+    "question": "Tu préfères...",
+    "optionA": "Avoir des cheveux qui sont des coraux",
+    "optionB": "Avoir une barbe qui est du corail",
+    "category": "Absurde"
+  },
+  {
+    "id": 69,
+    "question": "Tu préfères...",
+    "optionA": "Être un vampire qui boit du jus de pomme",
+    "optionB": "Être un loup-garou qui mange des brocolis",
+    "category": "Absurde"
+  },
+  {
+    "id": 70,
+    "question": "Tu préfères...",
+    "optionA": "Avoir un nombril qui fait des haïkus",
+    "optionB": "Avoir des sourcils qui font des sonnets",
+    "category": "Absurde"
+  },
+  {
+    "id": 71,
+    "question": "Tu préfères...",
+    "optionA": "Être un fantôme qui fait de la musique",
+    "optionB": "Être un zombie qui fait de la danse",
+    "category": "Absurde"
+  },
+  {
+    "id": 72,
+    "question": "Tu préfères...",
+    "optionA": "Avoir des yeux qui pleurent du caramel",
+    "optionB": "Avoir un nez qui éternue du chocolat",
+    "category": "Absurde"
+  },
+  {
+    "id": 73,
+    "question": "Tu préfères...",
+    "optionA": "Être un pirate qui navigue sur un pédalo",
+    "optionB": "Être un astronaute qui voyage en skateboard",
+    "category": "Absurde"
+  },
+  {
+    "id": 74,
+    "question": "Tu préfères...",
+    "optionA": "Avoir des cheveux qui sont des vermicelles",
+    "optionB": "Avoir une barbe qui est du velours",
+    "category": "Absurde"
+  },
+  {
+    "id": 75,
+    "question": "Tu préfères...",
+    "optionA": "Être un magicien qui fait des tours de cartes",
+    "optionB": "Être un sorcier qui fait des potions",
+    "category": "Fantasy"
+  },
+  {
+    "id": 76,
+    "question": "Tu préfères...",
+    "optionA": "Avoir un nombril qui chante du country",
+    "optionB": "Avoir des oreilles qui font du folk",
+    "category": "Absurde"
+  },
+  {
+    "id": 77,
+    "question": "Tu préfères...",
+    "optionA": "Être un dragon qui fait du crochet",
+    "optionB": "Être un phénix qui fait du tricot",
+    "category": "Absurde"
+  },
+  {
+    "id": 78,
+    "question": "Tu préfères...",
+    "optionA": "Avoir des yeux qui voient en 4D",
+    "optionB": "Avoir des oreilles qui entendent en quadriphonie",
+    "category": "Absurde"
+  },
+  {
+    "id": 79,
+    "question": "Tu préfères...",
+    "optionA": "Être un superhéros qui sauve les escargots",
+    "optionB": "Être un superhéros qui protège les limaces",
+    "category": "Absurde"
+  },
+  {
+    "id": 80,
+    "question": "Tu préfères...",
+    "optionA": "Avoir des cheveux qui sont des anémones",
+    "optionB": "Avoir une barbe qui est du lichen",
+    "category": "Absurde"
+  },
+  {
+    "id": 81,
+    "question": "Tu préfères...",
+    "optionA": "Être un vampire qui boit du jus de raisin",
+    "optionB": "Être un loup-garou qui mange des choux",
+    "category": "Absurde"
+  },
+  {
+    "id": 82,
+    "question": "Tu préfères...",
+    "optionA": "Avoir un nombril qui fait des limericks",
+    "optionB": "Avoir des sourcils qui font des ballades",
+    "category": "Absurde"
+  },
+  {
+    "id": 83,
+    "question": "Tu préfères...",
+    "optionA": "Être un fantôme qui fait du théâtre",
+    "optionB": "Être un zombie qui fait du cinéma",
+    "category": "Absurde"
+  },
+  {
+    "id": 84,
+    "question": "Tu préfères...",
+    "optionA": "Avoir des yeux qui pleurent du praliné",
+    "optionB": "Avoir un nez qui éternue du gianduja",
+    "category": "Absurde"
+  },
+  {
+    "id": 85,
+    "question": "Tu préfères...",
+    "optionA": "Être un pirate qui navigue sur un kayak",
+    "optionB": "Être un astronaute qui voyage en hoverboard",
+    "category": "Absurde"
+  },
+  {
+    "id": 86,
+    "question": "Tu préfères...",
+    "optionA": "Avoir des cheveux qui sont des tagliatelles",
+    "optionB": "Avoir une barbe qui est de la soie",
+    "category": "Absurde"
+  },
+  {
+    "id": 87,
+    "question": "Tu préfères...",
+    "optionA": "Être un magicien qui fait des tours de prestidigitation",
+    "optionB": "Être un sorcier qui fait des enchantements",
+    "category": "Fantasy"
+  },
+  {
+    "id": 88,
+    "question": "Tu préfères...",
+    "optionA": "Avoir un nombril qui chante du gospel",
+    "optionB": "Avoir des oreilles qui font du soul",
+    "category": "Absurde"
+  },
+  {
+    "id": 89,
+    "question": "Tu préfères...",
+    "optionA": "Être un dragon qui fait de la dentelle",
+    "optionB": "Être un phénix qui fait de la broderie",
+    "category": "Absurde"
+  },
+  {
+    "id": 90,
+    "question": "Tu préfères...",
+    "optionA": "Avoir des yeux qui voient en 5D",
+    "optionB": "Avoir des oreilles qui entendent en 5.1",
+    "category": "Absurde"
+  },
+  {
+    "id": 91,
+    "question": "Tu préfères...",
+    "optionA": "Être un superhéros qui sauve les tardigrades",
+    "optionB": "Être un superhéros qui protège les rotifères",
+    "category": "Absurde"
+  },
+  {
+    "id": 92,
+    "question": "Tu préfères...",
+    "optionA": "Avoir des cheveux qui sont des gorgones",
+    "optionB": "Avoir une barbe qui est du corail mou",
+    "category": "Absurde"
+  },
+  {
+    "id": 93,
+    "question": "Tu préfères...",
+    "optionA": "Être un vampire qui boit du jus de cerise",
+    "optionB": "Être un loup-garou qui mange des endives",
+    "category": "Absurde"
+  },
+  {
+    "id": 94,
+    "question": "Tu préfères...",
+    "optionA": "Avoir un nombril qui fait des villanelles",
+    "optionB": "Avoir des sourcils qui font des sestines",
+    "category": "Absurde"
+  },
+  {
+    "id": 95,
+    "question": "Tu préfères...",
+    "optionA": "Être un fantôme qui fait de l'opéra",
+    "optionB": "Être un zombie qui fait du ballet",
+    "category": "Absurde"
+  },
+  {
+    "id": 96,
+    "question": "Tu préfères...",
+    "optionA": "Avoir des yeux qui pleurent du gianduja",
+    "optionB": "Avoir un nez qui éternue du praliné",
+    "category": "Absurde"
+  },
+  {
+    "id": 97,
+    "question": "Tu préfères...",
+    "optionA": "Être un pirate qui navigue sur un pédalo",
+    "optionB": "Être un astronaute qui voyage en monocycle",
+    "category": "Absurde"
+  },
+  {
+    "id": 98,
+    "question": "Tu préfères...",
+    "optionA": "Avoir des cheveux qui sont des linguines",
+    "optionB": "Avoir une barbe qui est du satin",
+    "category": "Absurde"
+  },
+  {
+    "id": 99,
+    "question": "Tu préfères...",
+    "optionA": "Être un magicien qui fait des tours de mentalisme",
+    "optionB": "Être un sorcier qui fait des incantations",
+    "category": "Fantasy"
+  },
+  {
+    "id": 100,
+    "question": "Tu préfères...",
+    "optionA": "Avoir un nombril qui chante du jazz fusion",
+    "optionB": "Avoir des oreilles qui font du rock progressif",
+    "category": "Absurde"
+  }
+] 

@@ -63,5 +63,20 @@
     "materials": ["Questions et défis"],
     "instructions": "Choisissez 'Vérité' ou 'Action' et répondez à la question ou relevez le défi",
     "image": "assets/images/truth-or-dare.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Questioning",
+    "description": "Une collection de jeux de questions pour découvrir vos préférences, débattre et mieux vous connaître",
+    "minPlayers": 2,
+    "maxPlayers": 10,
+    "duration": "15-45 min",
+    "category": "Social",
+    "difficulty": "Facile",
+    "materials": ["Aucun matériel requis"],
+    "instructions": "Choisissez un sous-jeu (Tu préfères, Débats, Red/Green Flags, Qui pourrait) et suivez ses règles spécifiques",
+    "image": "assets/images/questioning.jpg",
+    "type": "collection",
+    "subGames": ["tu-preferes", "debats", "red-flags", "green-flags", "qui-pourrait"]
   }
 ] 

@@ -14,6 +14,19 @@ export interface Game {
   difficulty: string;
   icon: string;
   isUnderConstruction?: boolean;
+  type?: 'collection' | 'single';
+  subGames?: string[];
+}
+
+export interface SubGame {
+  id: string;
+  name: string;
+  description: string;
+  minPlayers: number;
+  maxPlayers: number;
+  duration: string;
+  category: string;
+  icon: string;
 }
 
 @Component({
@@ -59,12 +72,79 @@ export class GamesComponent implements OnInit {
       difficulty: "Facile",
       icon: "⭐",
       isUnderConstruction: true
+    },
+    {
+      id: 4,
+      name: "Questioning",
+      description: "Une collection de jeux de questions pour découvrir vos préférences, débattre et mieux vous connaître",
+      category: "questioning",
+      minPlayers: 2,
+      maxPlayers: 10,
+      duration: "15-45 min",
+      difficulty: "Facile",
+      icon: "❓",
+      type: "collection",
+      subGames: ["tu-preferes", "debats", "red-flags", "green-flags", "qui-pourrait"]
     }
   ];
 
-  categories: string[] = ['taz'];
-  selectedCategory: string = 'taz';
+  subGames: { [key: string]: SubGame[] } = {
+    "questioning": [
+      {
+        id: "tu-preferes",
+        name: "Tu préfères",
+        description: "Choisissez entre deux options parfois difficiles et découvrez les préférences de chacun",
+        minPlayers: 2,
+        maxPlayers: 10,
+        duration: "10-20 min",
+        category: "Préférences",
+        icon: "🤔"
+      },
+      {
+        id: "debats",
+        name: "Débats",
+        description: "Débattez sur des sujets controversés et découvrez les opinions de chacun",
+        minPlayers: 3,
+        maxPlayers: 8,
+        duration: "15-30 min",
+        category: "Discussion",
+        icon: "💬"
+      },
+      {
+        id: "red-flags",
+        name: "Red Flags",
+        description: "Identifiez les comportements problématiques dans les relations",
+        minPlayers: 2,
+        maxPlayers: 8,
+        duration: "10-20 min",
+        category: "Relations",
+        icon: "🚩"
+      },
+      {
+        id: "green-flags",
+        name: "Green Flags",
+        description: "Identifiez les comportements positifs dans les relations",
+        minPlayers: 2,
+        maxPlayers: 8,
+        duration: "10-20 min",
+        category: "Relations",
+        icon: "✅"
+      },
+      {
+        id: "qui-pourrait",
+        name: "Qui pourrait",
+        description: "Découvrez qui parmi vous pourrait le mieux accomplir certaines tâches",
+        minPlayers: 3,
+        maxPlayers: 10,
+        duration: "10-25 min",
+        category: "Connaissance",
+        icon: "👥"
+      }
+    ]
+  };
+
   players: any[] = [];
+  selectedGame: Game | null = null;
 
   constructor(
     private playerService: PlayerService,
@@ -81,8 +161,26 @@ export class GamesComponent implements OnInit {
     return this.games.filter(game => game.category === category);
   }
 
-  selectCategory(category: string): void {
-    this.selectedCategory = category;
+  getSubGamesByGame(game: Game): SubGame[] {
+    if (game.type === 'collection' && game.subGames) {
+      return this.subGames[game.category]?.filter(subGame => 
+        game.subGames!.includes(subGame.id)
+      ) || [];
+    }
+    return [];
+  }
+
+  selectGame(game: Game): void {
+    if (game.type === 'collection') {
+      this.selectedGame = game;
+    } else {
+      this.startGame(game);
+    }
+  }
+
+  startSubGame(subGame: SubGame): void {
+    // Navigation vers la page de paramètres du sous-jeu
+    this.router.navigate(['/settings', 'questioning', subGame.id]);
   }
 
   startGame(game: Game): void {
@@ -96,6 +194,10 @@ export class GamesComponent implements OnInit {
   }
 
   goBack(): void {
-    this.router.navigate(['/']);
+    if (this.selectedGame) {
+      this.selectedGame = null;
+    } else {
+      this.router.navigate(['/']);
+    }
   }
 } 

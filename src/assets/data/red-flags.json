@@ -1,0 +1,602 @@
+[
+  {
+    "id": 1,
+    "situation": "Il/elle dit 'je ne suis pas jaloux(e)' mais vérifie ton téléphone",
+    "category": "Relations",
+    "severity": "Élevée"
+  },
+  {
+    "id": 2,
+    "situation": "Il/elle critique constamment tes amis et ta famille",
+    "category": "Relations",
+    "severity": "Élevée"
+  },
+  {
+    "id": 3,
+    "situation": "Il/elle refuse de s'excuser, même quand il/elle a tort",
+    "category": "Communication",
+    "severity": "Moyenne"
+  },
+  {
+    "id": 4,
+    "situation": "Il/elle te fait culpabiliser pour tes choix personnels",
+    "category": "Relations",
+    "severity": "Élevée"
+  },
+  {
+    "id": 5,
+    "situation": "Il/elle ne respecte pas tes limites personnelles",
+    "category": "Relations",
+    "severity": "Élevée"
+  },
+  {
+    "id": 6,
+    "situation": "Il/elle te compare constamment à ses ex",
+    "category": "Relations",
+    "severity": "Moyenne"
+  },
+  {
+    "id": 7,
+    "situation": "Il/elle ne supporte pas que tu aies des centres d'intérêt différents",
+    "category": "Relations",
+    "severity": "Moyenne"
+  },
+  {
+    "id": 8,
+    "situation": "Il/elle te fait des promesses qu'il/elle ne tient jamais",
+    "category": "Fiabilité",
+    "severity": "Moyenne"
+  },
+  {
+    "id": 9,
+    "situation": "Il/elle te rabaisse devant les autres",
+    "category": "Relations",
+    "severity": "Élevée"
+  },
+  {
+    "id": 10,
+    "situation": "Il/elle contrôle tes dépenses et tes achats",
+    "category": "Relations",
+    "severity": "Élevée"
+  },
+  {
+    "id": 11,
+    "situation": "Il/elle ne te présente jamais à ses amis ou sa famille",
+    "category": "Relations",
+    "severity": "Moyenne"
+  },
+  {
+    "id": 12,
+    "situation": "Il/elle te fait sentir coupable de tes émotions",
+    "category": "Relations",
+    "severity": "Élevée"
+  },
+  {
+    "id": 13,
+    "situation": "Il/elle ne respecte pas ton espace personnel",
+    "category": "Relations",
+    "severity": "Moyenne"
+  },
+  {
+    "id": 14,
+    "situation": "Il/elle te ment sur des choses importantes",
+    "category": "Fiabilité",
+    "severity": "Élevée"
+  },
+  {
+    "id": 15,
+    "situation": "Il/elle ne supporte pas la critique constructive",
+    "category": "Communication",
+    "severity": "Moyenne"
+  },
+  {
+    "id": 16,
+    "situation": "Il/elle te fait sentir que tu n'es pas assez bien",
+    "category": "Relations",
+    "severity": "Élevée"
+  },
+  {
+    "id": 17,
+    "situation": "Il/elle ne respecte pas tes horaires et tes engagements",
+    "category": "Respect",
+    "severity": "Moyenne"
+  },
+  {
+    "id": 18,
+    "situation": "Il/elle te fait des commentaires désobligeants sur ton apparence",
+    "category": "Relations",
+    "severity": "Élevée"
+  },
+  {
+    "id": 19,
+    "situation": "Il/elle ne partage jamais ses sentiments ou ses problèmes",
+    "category": "Communication",
+    "severity": "Moyenne"
+  },
+  {
+    "id": 20,
+    "situation": "Il/elle te fait sentir que tu dois toujours être disponible",
+    "category": "Relations",
+    "severity": "Moyenne"
+  },
+  {
+    "id": 21,
+    "situation": "Il/elle ne respecte pas tes opinions politiques ou religieuses",
+    "category": "Respect",
+    "severity": "Moyenne"
+  },
+  {
+    "id": 22,
+    "situation": "Il/elle te fait des cadeaux pour te faire culpabiliser",
+    "category": "Relations",
+    "severity": "Moyenne"
+  },
+  {
+    "id": 23,
+    "situation": "Il/elle ne supporte pas que tu aies des amis du sexe opposé",
+    "category": "Relations",
+    "severity": "Élevée"
+  },
+  {
+    "id": 24,
+    "situation": "Il/elle te fait sentir que tu lui dois quelque chose",
+    "category": "Relations",
+    "severity": "Moyenne"
+  },
+  {
+    "id": 25,
+    "situation": "Il/elle ne respecte pas tes décisions importantes",
+    "category": "Relations",
+    "severity": "Élevée"
+  },
+  {
+    "id": 26,
+    "situation": "Il/elle te fait des blagues qui te blessent",
+    "category": "Relations",
+    "severity": "Moyenne"
+  },
+  {
+    "id": 27,
+    "situation": "Il/elle ne respecte pas tes préférences sexuelles",
+    "category": "Relations",
+    "severity": "Élevée"
+  },
+  {
+    "id": 28,
+    "situation": "Il/elle te fait sentir que tes problèmes ne sont pas importants",
+    "category": "Relations",
+    "severity": "Moyenne"
+  },
+  {
+    "id": 29,
+    "situation": "Il/elle ne respecte pas tes limites physiques",
+    "category": "Relations",
+    "severity": "Élevée"
+  },
+  {
+    "id": 30,
+    "situation": "Il/elle te fait des commentaires sur ton poids",
+    "category": "Relations",
+    "severity": "Élevée"
+  },
+  {
+    "id": 31,
+    "situation": "Il/elle ne respecte pas tes choix vestimentaires",
+    "category": "Relations",
+    "severity": "Moyenne"
+  },
+  {
+    "id": 32,
+    "situation": "Il/elle te fait sentir que tu es trop sensible",
+    "category": "Relations",
+    "severity": "Moyenne"
+  },
+  {
+    "id": 33,
+    "situation": "Il/elle ne respecte pas tes préférences alimentaires",
+    "category": "Relations",
+    "severity": "Moyenne"
+  },
+  {
+    "id": 34,
+    "situation": "Il/elle te fait des commentaires sur tes choix de carrière",
+    "category": "Relations",
+    "severity": "Moyenne"
+  },
+  {
+    "id": 35,
+    "situation": "Il/elle ne respecte pas tes choix de vie",
+    "category": "Relations",
+    "severity": "Moyenne"
+  },
+  {
+    "id": 36,
+    "situation": "Il/elle te fait sentir que tu es trop exigeant(e)",
+    "category": "Relations",
+    "severity": "Moyenne"
+  },
+  {
+    "id": 37,
+    "situation": "Il/elle ne respecte pas tes préférences de divertissement",
+    "category": "Relations",
+    "severity": "Moyenne"
+  },
+  {
+    "id": 38,
+    "situation": "Il/elle te fait des commentaires sur tes choix de musique",
+    "category": "Relations",
+    "severity": "Moyenne"
+  },
+  {
+    "id": 39,
+    "situation": "Il/elle ne respecte pas tes préférences de films",
+    "category": "Relations",
+    "severity": "Moyenne"
+  },
+  {
+    "id": 40,
+    "situation": "Il/elle te fait sentir que tu es trop différent(e)",
+    "category": "Relations",
+    "severity": "Moyenne"
+  },
+  {
+    "id": 41,
+    "situation": "Il/elle ne respecte pas tes choix de lecture",
+    "category": "Relations",
+    "severity": "Moyenne"
+  },
+  {
+    "id": 42,
+    "situation": "Il/elle te fait des commentaires sur tes passe-temps",
+    "category": "Relations",
+    "severity": "Moyenne"
+  },
+  {
+    "id": 43,
+    "situation": "Il/elle ne respecte pas tes préférences de voyage",
+    "category": "Relations",
+    "severity": "Moyenne"
+  },
+  {
+    "id": 44,
+    "situation": "Il/elle te fait sentir que tu es trop traditionnel(le)",
+    "category": "Relations",
+    "severity": "Moyenne"
+  },
+  {
+    "id": 45,
+    "situation": "Il/elle ne respecte pas tes choix de décoration",
+    "category": "Relations",
+    "severity": "Moyenne"
+  },
+  {
+    "id": 46,
+    "situation": "Il/elle te fait des commentaires sur tes choix de sport",
+    "category": "Relations",
+    "severity": "Moyenne"
+  },
+  {
+    "id": 47,
+    "situation": "Il/elle ne respecte pas tes préférences de cuisine",
+    "category": "Relations",
+    "severity": "Moyenne"
+  },
+  {
+    "id": 48,
+    "situation": "Il/elle te fait sentir que tu es trop moderne",
+    "category": "Relations",
+    "severity": "Moyenne"
+  },
+  {
+    "id": 49,
+    "situation": "Il/elle ne respecte pas tes choix de technologie",
+    "category": "Relations",
+    "severity": "Moyenne"
+  },
+  {
+    "id": 50,
+    "situation": "Il/elle te fait des commentaires sur tes choix de marques",
+    "category": "Relations",
+    "severity": "Moyenne"
+  },
+  {
+    "id": 51,
+    "situation": "Il/elle ne respecte pas tes préférences de sorties",
+    "category": "Relations",
+    "severity": "Moyenne"
+  },
+  {
+    "id": 52,
+    "situation": "Il/elle te fait sentir que tu es trop sociable",
+    "category": "Relations",
+    "severity": "Moyenne"
+  },
+  {
+    "id": 53,
+    "situation": "Il/elle ne respecte pas tes choix de réseaux sociaux",
+    "category": "Relations",
+    "severity": "Moyenne"
+  },
+  {
+    "id": 54,
+    "situation": "Il/elle te fait des commentaires sur tes choix de jeux",
+    "category": "Relations",
+    "severity": "Moyenne"
+  },
+  {
+    "id": 55,
+    "situation": "Il/elle ne respecte pas tes préférences de musique",
+    "category": "Relations",
+    "severity": "Moyenne"
+  },
+  {
+    "id": 56,
+    "situation": "Il/elle te fait sentir que tu es trop créatif(ve)",
+    "category": "Relations",
+    "severity": "Moyenne"
+  },
+  {
+    "id": 57,
+    "situation": "Il/elle ne respecte pas tes choix de films",
+    "category": "Relations",
+    "severity": "Moyenne"
+  },
+  {
+    "id": 58,
+    "situation": "Il/elle te fait des commentaires sur tes choix de séries",
+    "category": "Relations",
+    "severity": "Moyenne"
+  },
+  {
+    "id": 59,
+    "situation": "Il/elle ne respecte pas tes préférences de podcasts",
+    "category": "Relations",
+    "severity": "Moyenne"
+  },
+  {
+    "id": 60,
+    "situation": "Il/elle te fait sentir que tu es trop intellectuel(le)",
+    "category": "Relations",
+    "severity": "Moyenne"
+  },
+  {
+    "id": 61,
+    "situation": "Il/elle ne respecte pas tes choix de livres",
+    "category": "Relations",
+    "severity": "Moyenne"
+  },
+  {
+    "id": 62,
+    "situation": "Il/elle te fait des commentaires sur tes choix de magazines",
+    "category": "Relations",
+    "severity": "Moyenne"
+  },
+  {
+    "id": 63,
+    "situation": "Il/elle ne respecte pas tes préférences de blogs",
+    "category": "Relations",
+    "severity": "Moyenne"
+  },
+  {
+    "id": 64,
+    "situation": "Il/elle te fait sentir que tu es trop connecté(e)",
+    "category": "Relations",
+    "severity": "Moyenne"
+  },
+  {
+    "id": 65,
+    "situation": "Il/elle ne respecte pas tes choix de sites web",
+    "category": "Relations",
+    "severity": "Moyenne"
+  },
+  {
+    "id": 66,
+    "situation": "Il/elle te fait des commentaires sur tes choix d'applications",
+    "category": "Relations",
+    "severity": "Moyenne"
+  },
+  {
+    "id": 67,
+    "situation": "Il/elle ne respecte pas tes préférences de jeux vidéo",
+    "category": "Relations",
+    "severity": "Moyenne"
+  },
+  {
+    "id": 68,
+    "situation": "Il/elle te fait sentir que tu es trop compétitif(ve)",
+    "category": "Relations",
+    "severity": "Moyenne"
+  },
+  {
+    "id": 69,
+    "situation": "Il/elle ne respecte pas tes choix de jeux de société",
+    "category": "Relations",
+    "severity": "Moyenne"
+  },
+  {
+    "id": 70,
+    "situation": "Il/elle te fait des commentaires sur tes choix de puzzles",
+    "category": "Relations",
+    "severity": "Moyenne"
+  },
+  {
+    "id": 71,
+    "situation": "Il/elle ne respecte pas tes préférences de jeux de cartes",
+    "category": "Relations",
+    "severity": "Moyenne"
+  },
+  {
+    "id": 72,
+    "situation": "Il/elle te fait sentir que tu es trop stratégique",
+    "category": "Relations",
+    "severity": "Moyenne"
+  },
+  {
+    "id": 73,
+    "situation": "Il/elle ne respecte pas tes choix de jeux de rôle",
+    "category": "Relations",
+    "severity": "Moyenne"
+  },
+  {
+    "id": 74,
+    "situation": "Il/elle te fait des commentaires sur tes choix de jeux de plateau",
+    "category": "Relations",
+    "severity": "Moyenne"
+  },
+  {
+    "id": 75,
+    "situation": "Il/elle ne respecte pas tes préférences de jeux en ligne",
+    "category": "Relations",
+    "severity": "Moyenne"
+  },
+  {
+    "id": 76,
+    "situation": "Il/elle te fait sentir que tu es trop addictif(ve)",
+    "category": "Relations",
+    "severity": "Moyenne"
+  },
+  {
+    "id": 77,
+    "situation": "Il/elle ne respecte pas tes choix de jeux mobiles",
+    "category": "Relations",
+    "severity": "Moyenne"
+  },
+  {
+    "id": 78,
+    "situation": "Il/elle te fait des commentaires sur tes choix de jeux de hasard",
+    "category": "Relations",
+    "severity": "Moyenne"
+  },
+  {
+    "id": 79,
+    "situation": "Il/elle ne respecte pas tes préférences de jeux de réflexion",
+    "category": "Relations",
+    "severity": "Moyenne"
+  },
+  {
+    "id": 80,
+    "situation": "Il/elle te fait sentir que tu es trop logique",
+    "category": "Relations",
+    "severity": "Moyenne"
+  },
+  {
+    "id": 81,
+    "situation": "Il/elle ne respecte pas tes choix de jeux d'action",
+    "category": "Relations",
+    "severity": "Moyenne"
+  },
+  {
+    "id": 82,
+    "situation": "Il/elle te fait des commentaires sur tes choix de jeux d'aventure",
+    "category": "Relations",
+    "severity": "Moyenne"
+  },
+  {
+    "id": 83,
+    "situation": "Il/elle ne respecte pas tes préférences de jeux de simulation",
+    "category": "Relations",
+    "severity": "Moyenne"
+  },
+  {
+    "id": 84,
+    "situation": "Il/elle te fait sentir que tu es trop réaliste",
+    "category": "Relations",
+    "severity": "Moyenne"
+  },
+  {
+    "id": 85,
+    "situation": "Il/elle ne respecte pas tes choix de jeux de sport",
+    "category": "Relations",
+    "severity": "Moyenne"
+  },
+  {
+    "id": 86,
+    "situation": "Il/elle te fait des commentaires sur tes choix de jeux de course",
+    "category": "Relations",
+    "severity": "Moyenne"
+  },
+  {
+    "id": 87,
+    "situation": "Il/elle ne respecte pas tes préférences de jeux de combat",
+    "category": "Relations",
+    "severity": "Moyenne"
+  },
+  {
+    "id": 88,
+    "situation": "Il/elle te fait sentir que tu es trop agressif(ve)",
+    "category": "Relations",
+    "severity": "Moyenne"
+  },
+  {
+    "id": 89,
+    "situation": "Il/elle ne respecte pas tes choix de jeux de tir",
+    "category": "Relations",
+    "severity": "Moyenne"
+  },
+  {
+    "id": 90,
+    "situation": "Il/elle te fait des commentaires sur tes choix de jeux de guerre",
+    "category": "Relations",
+    "severity": "Moyenne"
+  },
+  {
+    "id": 91,
+    "situation": "Il/elle ne respecte pas tes préférences de jeux d'horreur",
+    "category": "Relations",
+    "severity": "Moyenne"
+  },
+  {
+    "id": 92,
+    "situation": "Il/elle te fait sentir que tu es trop sensible",
+    "category": "Relations",
+    "severity": "Moyenne"
+  },
+  {
+    "id": 93,
+    "situation": "Il/elle ne respecte pas tes choix de jeux de puzzle",
+    "category": "Relations",
+    "severity": "Moyenne"
+  },
+  {
+    "id": 94,
+    "situation": "Il/elle te fait des commentaires sur tes choix de jeux de mots",
+    "category": "Relations",
+    "severity": "Moyenne"
+  },
+  {
+    "id": 95,
+    "situation": "Il/elle ne respecte pas tes préférences de jeux de quiz",
+    "category": "Relations",
+    "severity": "Moyenne"
+  },
+  {
+    "id": 96,
+    "situation": "Il/elle te fait sentir que tu es trop scolaire",
+    "category": "Relations",
+    "severity": "Moyenne"
+  },
+  {
+    "id": 97,
+    "situation": "Il/elle ne respecte pas tes choix de jeux de mémoire",
+    "category": "Relations",
+    "severity": "Moyenne"
+  },
+  {
+    "id": 98,
+    "situation": "Il/elle te fait des commentaires sur tes choix de jeux de concentration",
+    "category": "Relations",
+    "severity": "Moyenne"
+  },
+  {
+    "id": 99,
+    "situation": "Il/elle ne respecte pas tes préférences de jeux de patience",
+    "category": "Relations",
+    "severity": "Moyenne"
+  },
+  {
+    "id": 100,
+    "situation": "Il/elle te fait sentir que tu es trop calme",
+    "category": "Relations",
+    "severity": "Moyenne"
+  }
+] 

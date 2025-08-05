@@ -1,0 +1,602 @@
+[
+  {
+    "id": 1,
+    "question": "Qui pourrait survivre le plus longtemps dans la nature ?",
+    "category": "Survie",
+    "difficulty": "Facile"
+  },
+  {
+    "id": 2,
+    "question": "Qui pourrait être le meilleur détective ?",
+    "category": "Logique",
+    "difficulty": "Facile"
+  },
+  {
+    "id": 3,
+    "question": "Qui pourrait être le plus drôle en stand-up ?",
+    "category": "Humour",
+    "difficulty": "Facile"
+  },
+  {
+    "id": 4,
+    "question": "Qui pourrait être le meilleur cuisinier ?",
+    "category": "Cuisine",
+    "difficulty": "Facile"
+  },
+  {
+    "id": 5,
+    "question": "Qui pourrait être le plus courageux dans une situation dangereuse ?",
+    "category": "Courage",
+    "difficulty": "Moyen"
+  },
+  {
+    "id": 6,
+    "question": "Qui pourrait être le meilleur négociateur ?",
+    "category": "Communication",
+    "difficulty": "Moyen"
+  },
+  {
+    "id": 7,
+    "question": "Qui pourrait être le plus créatif dans un projet artistique ?",
+    "category": "Créativité",
+    "difficulty": "Facile"
+  },
+  {
+    "id": 8,
+    "question": "Qui pourrait être le meilleur leader d'équipe ?",
+    "category": "Leadership",
+    "difficulty": "Moyen"
+  },
+  {
+    "id": 9,
+    "question": "Qui pourrait être le plus patient avec les enfants ?",
+    "category": "Patience",
+    "difficulty": "Facile"
+  },
+  {
+    "id": 10,
+    "question": "Qui pourrait être le meilleur espion ?",
+    "category": "Discrétion",
+    "difficulty": "Moyen"
+  },
+  {
+    "id": 11,
+    "question": "Qui pourrait être le plus calme dans une situation stressante ?",
+    "category": "Gestion du stress",
+    "difficulty": "Moyen"
+  },
+  {
+    "id": 12,
+    "question": "Qui pourrait être le meilleur motivateur ?",
+    "category": "Motivation",
+    "difficulty": "Moyen"
+  },
+  {
+    "id": 13,
+    "question": "Qui pourrait être le plus organisé dans un déménagement ?",
+    "category": "Organisation",
+    "difficulty": "Facile"
+  },
+  {
+    "id": 14,
+    "question": "Qui pourrait être le meilleur médiateur dans un conflit ?",
+    "category": "Résolution de conflits",
+    "difficulty": "Difficile"
+  },
+  {
+    "id": 15,
+    "question": "Qui pourrait être le plus persévérant dans un projet difficile ?",
+    "category": "Persévérance",
+    "difficulty": "Moyen"
+  },
+  {
+    "id": 16,
+    "question": "Qui pourrait être le meilleur improvisateur ?",
+    "category": "Créativité",
+    "difficulty": "Facile"
+  },
+  {
+    "id": 17,
+    "question": "Qui pourrait être le plus généreux avec son temps ?",
+    "category": "Générosité",
+    "difficulty": "Facile"
+  },
+  {
+    "id": 18,
+    "question": "Qui pourrait être le meilleur planificateur de voyage ?",
+    "category": "Organisation",
+    "difficulty": "Facile"
+  },
+  {
+    "id": 19,
+    "question": "Qui pourrait être le plus honnête même dans une situation difficile ?",
+    "category": "Honnêteté",
+    "difficulty": "Moyen"
+  },
+  {
+    "id": 20,
+    "question": "Qui pourrait être le meilleur conseiller en amour ?",
+    "category": "Relations",
+    "difficulty": "Moyen"
+  },
+  {
+    "id": 21,
+    "question": "Qui pourrait être le plus adaptable à un nouveau pays ?",
+    "category": "Adaptabilité",
+    "difficulty": "Moyen"
+  },
+  {
+    "id": 22,
+    "question": "Qui pourrait être le meilleur gardien de secret ?",
+    "category": "Confidentialité",
+    "difficulty": "Facile"
+  },
+  {
+    "id": 23,
+    "question": "Qui pourrait être le plus optimiste dans une situation difficile ?",
+    "category": "Optimisme",
+    "difficulty": "Moyen"
+  },
+  {
+    "id": 24,
+    "question": "Qui pourrait être le meilleur enseignant ?",
+    "category": "Pédagogie",
+    "difficulty": "Moyen"
+  },
+  {
+    "id": 25,
+    "question": "Qui pourrait être le plus loyal en amitié ?",
+    "category": "Loyauté",
+    "difficulty": "Facile"
+  },
+  {
+    "id": 26,
+    "question": "Qui pourrait être le meilleur inventeur ?",
+    "category": "Innovation",
+    "difficulty": "Difficile"
+  },
+  {
+    "id": 27,
+    "question": "Qui pourrait être le plus respectueux des différences ?",
+    "category": "Tolérance",
+    "difficulty": "Facile"
+  },
+  {
+    "id": 28,
+    "question": "Qui pourrait être le meilleur gestionnaire d'argent ?",
+    "category": "Finances",
+    "difficulty": "Moyen"
+  },
+  {
+    "id": 29,
+    "question": "Qui pourrait être le plus curieux intellectuellement ?",
+    "category": "Curiosité",
+    "difficulty": "Facile"
+  },
+  {
+    "id": 30,
+    "question": "Qui pourrait être le meilleur ami pour la vie ?",
+    "category": "Relations",
+    "difficulty": "Facile"
+  },
+  {
+    "id": 31,
+    "question": "Qui pourrait être le meilleur danseur de robot ?",
+    "category": "Absurde",
+    "difficulty": "Facile"
+  },
+  {
+    "id": 32,
+    "question": "Qui pourrait être le plus drôle en imitant des animaux ?",
+    "category": "Humour",
+    "difficulty": "Facile"
+  },
+  {
+    "id": 33,
+    "question": "Qui pourrait être le meilleur constructeur de châteaux de sable ?",
+    "category": "Créativité",
+    "difficulty": "Facile"
+  },
+  {
+    "id": 34,
+    "question": "Qui pourrait être le plus patient avec un ordinateur qui rame ?",
+    "category": "Patience",
+    "difficulty": "Facile"
+  },
+  {
+    "id": 35,
+    "question": "Qui pourrait être le meilleur raconteur d'histoires ?",
+    "category": "Communication",
+    "difficulty": "Facile"
+  },
+  {
+    "id": 36,
+    "question": "Qui pourrait être le plus créatif avec des légos ?",
+    "category": "Créativité",
+    "difficulty": "Facile"
+  },
+  {
+    "id": 37,
+    "question": "Qui pourrait être le meilleur imitateur de voix ?",
+    "category": "Talent",
+    "difficulty": "Facile"
+  },
+  {
+    "id": 38,
+    "question": "Qui pourrait être le plus calme pendant une panne d'électricité ?",
+    "category": "Gestion du stress",
+    "difficulty": "Facile"
+  },
+  {
+    "id": 39,
+    "question": "Qui pourrait être le meilleur organisateur de fête surprise ?",
+    "category": "Organisation",
+    "difficulty": "Facile"
+  },
+  {
+    "id": 40,
+    "question": "Qui pourrait être le plus honnête sur son âge ?",
+    "category": "Honnêteté",
+    "difficulty": "Facile"
+  },
+  {
+    "id": 41,
+    "question": "Qui pourrait être le meilleur conseiller en mode ?",
+    "category": "Style",
+    "difficulty": "Facile"
+  },
+  {
+    "id": 42,
+    "question": "Qui pourrait être le plus adaptable à un nouveau téléphone ?",
+    "category": "Technologie",
+    "difficulty": "Facile"
+  },
+  {
+    "id": 43,
+    "question": "Qui pourrait être le meilleur gardien de recettes secrètes ?",
+    "category": "Confidentialité",
+    "difficulty": "Facile"
+  },
+  {
+    "id": 44,
+    "question": "Qui pourrait être le plus optimiste pendant une grève de transport ?",
+    "category": "Optimisme",
+    "difficulty": "Facile"
+  },
+  {
+    "id": 45,
+    "question": "Qui pourrait être le meilleur enseignant de tricot ?",
+    "category": "Pédagogie",
+    "difficulty": "Facile"
+  },
+  {
+    "id": 46,
+    "question": "Qui pourrait être le plus loyal en gardant un secret ?",
+    "category": "Loyauté",
+    "difficulty": "Facile"
+  },
+  {
+    "id": 47,
+    "question": "Qui pourrait être le meilleur inventeur de cocktails ?",
+    "category": "Créativité",
+    "difficulty": "Facile"
+  },
+  {
+    "id": 48,
+    "question": "Qui pourrait être le plus respectueux des règles du jeu ?",
+    "category": "Respect",
+    "difficulty": "Facile"
+  },
+  {
+    "id": 49,
+    "question": "Qui pourrait être le meilleur gestionnaire de budget vacances ?",
+    "category": "Finances",
+    "difficulty": "Facile"
+  },
+  {
+    "id": 50,
+    "question": "Qui pourrait être le plus curieux des nouvelles technologies ?",
+    "category": "Curiosité",
+    "difficulty": "Facile"
+  },
+  {
+    "id": 51,
+    "question": "Qui pourrait être le meilleur ami pour un road trip ?",
+    "category": "Relations",
+    "difficulty": "Facile"
+  },
+  {
+    "id": 52,
+    "question": "Qui pourrait être le meilleur danseur de macarena ?",
+    "category": "Absurde",
+    "difficulty": "Facile"
+  },
+  {
+    "id": 53,
+    "question": "Qui pourrait être le plus drôle en imitant des accents ?",
+    "category": "Humour",
+    "difficulty": "Facile"
+  },
+  {
+    "id": 54,
+    "question": "Qui pourrait être le meilleur constructeur de forts en couverture ?",
+    "category": "Créativité",
+    "difficulty": "Facile"
+  },
+  {
+    "id": 55,
+    "question": "Qui pourrait être le plus patient avec un GPS qui se trompe ?",
+    "category": "Patience",
+    "difficulty": "Facile"
+  },
+  {
+    "id": 56,
+    "question": "Qui pourrait être le meilleur raconteur de blagues ?",
+    "category": "Communication",
+    "difficulty": "Facile"
+  },
+  {
+    "id": 57,
+    "question": "Qui pourrait être le plus créatif avec des cartons ?",
+    "category": "Créativité",
+    "difficulty": "Facile"
+  },
+  {
+    "id": 58,
+    "question": "Qui pourrait être le meilleur imitateur de célébrités ?",
+    "category": "Talent",
+    "difficulty": "Facile"
+  },
+  {
+    "id": 59,
+    "question": "Qui pourrait être le plus calme pendant une coupure internet ?",
+    "category": "Gestion du stress",
+    "difficulty": "Facile"
+  },
+  {
+    "id": 60,
+    "question": "Qui pourrait être le meilleur organisateur de pique-nique ?",
+    "category": "Organisation",
+    "difficulty": "Facile"
+  },
+  {
+    "id": 61,
+    "question": "Qui pourrait être le plus honnête sur ses goûts musicaux ?",
+    "category": "Honnêteté",
+    "difficulty": "Facile"
+  },
+  {
+    "id": 62,
+    "question": "Qui pourrait être le meilleur conseiller en décoration ?",
+    "category": "Style",
+    "difficulty": "Facile"
+  },
+  {
+    "id": 63,
+    "question": "Qui pourrait être le plus adaptable à un nouveau restaurant ?",
+    "category": "Adaptabilité",
+    "difficulty": "Facile"
+  },
+  {
+    "id": 64,
+    "question": "Qui pourrait être le meilleur gardien de surprises ?",
+    "category": "Confidentialité",
+    "difficulty": "Facile"
+  },
+  {
+    "id": 65,
+    "question": "Qui pourrait être le plus optimiste pendant une grève de météo ?",
+    "category": "Optimisme",
+    "difficulty": "Facile"
+  },
+  {
+    "id": 66,
+    "question": "Qui pourrait être le meilleur enseignant de yoga ?",
+    "category": "Pédagogie",
+    "difficulty": "Facile"
+  },
+  {
+    "id": 67,
+    "question": "Qui pourrait être le plus loyal en amitié virtuelle ?",
+    "category": "Loyauté",
+    "difficulty": "Facile"
+  },
+  {
+    "id": 68,
+    "question": "Qui pourrait être le meilleur inventeur de smoothies ?",
+    "category": "Créativité",
+    "difficulty": "Facile"
+  },
+  {
+    "id": 69,
+    "question": "Qui pourrait être le plus respectueux des horaires ?",
+    "category": "Respect",
+    "difficulty": "Facile"
+  },
+  {
+    "id": 70,
+    "question": "Qui pourrait être le meilleur gestionnaire de liste de courses ?",
+    "category": "Finances",
+    "difficulty": "Facile"
+  },
+  {
+    "id": 71,
+    "question": "Qui pourrait être le plus curieux des nouvelles tendances ?",
+    "category": "Curiosité",
+    "difficulty": "Facile"
+  },
+  {
+    "id": 72,
+    "question": "Qui pourrait être le meilleur ami pour une soirée jeux ?",
+    "category": "Relations",
+    "difficulty": "Facile"
+  },
+  {
+    "id": 73,
+    "question": "Qui pourrait être le meilleur danseur de moonwalk ?",
+    "category": "Absurde",
+    "difficulty": "Facile"
+  },
+  {
+    "id": 74,
+    "question": "Qui pourrait être le plus drôle en imitant des films ?",
+    "category": "Humour",
+    "difficulty": "Facile"
+  },
+  {
+    "id": 75,
+    "question": "Qui pourrait être le meilleur constructeur de cabanes ?",
+    "category": "Créativité",
+    "difficulty": "Facile"
+  },
+  {
+    "id": 76,
+    "question": "Qui pourrait être le plus patient avec un ordinateur qui plante ?",
+    "category": "Patience",
+    "difficulty": "Facile"
+  },
+  {
+    "id": 77,
+    "question": "Qui pourrait être le meilleur raconteur d'histoires d'horreur ?",
+    "category": "Communication",
+    "difficulty": "Facile"
+  },
+  {
+    "id": 78,
+    "question": "Qui pourrait être le plus créatif avec des pâtes à modeler ?",
+    "category": "Créativité",
+    "difficulty": "Facile"
+  },
+  {
+    "id": 79,
+    "question": "Qui pourrait être le meilleur imitateur de bruits ?",
+    "category": "Talent",
+    "difficulty": "Facile"
+  },
+  {
+    "id": 80,
+    "question": "Qui pourrait être le plus calme pendant une panne de téléphone ?",
+    "category": "Gestion du stress",
+    "difficulty": "Facile"
+  },
+  {
+    "id": 81,
+    "question": "Qui pourrait être le meilleur organisateur de barbecue ?",
+    "category": "Organisation",
+    "difficulty": "Facile"
+  },
+  {
+    "id": 82,
+    "question": "Qui pourrait être le plus honnête sur ses films préférés ?",
+    "category": "Honnêteté",
+    "difficulty": "Facile"
+  },
+  {
+    "id": 83,
+    "question": "Qui pourrait être le meilleur conseiller en jardinage ?",
+    "category": "Style",
+    "difficulty": "Facile"
+  },
+  {
+    "id": 84,
+    "question": "Qui pourrait être le plus adaptable à un nouveau sport ?",
+    "category": "Adaptabilité",
+    "difficulty": "Facile"
+  },
+  {
+    "id": 85,
+    "question": "Qui pourrait être le meilleur gardien de secrets de famille ?",
+    "category": "Confidentialité",
+    "difficulty": "Facile"
+  },
+  {
+    "id": 86,
+    "question": "Qui pourrait être le plus optimiste pendant une grève de cinéma ?",
+    "category": "Optimisme",
+    "difficulty": "Facile"
+  },
+  {
+    "id": 87,
+    "question": "Qui pourrait être le meilleur enseignant de cuisine ?",
+    "category": "Pédagogie",
+    "difficulty": "Facile"
+  },
+  {
+    "id": 88,
+    "question": "Qui pourrait être le plus loyal en gardant un secret professionnel ?",
+    "category": "Loyauté",
+    "difficulty": "Facile"
+  },
+  {
+    "id": 89,
+    "question": "Qui pourrait être le meilleur inventeur de cocktails sans alcool ?",
+    "category": "Créativité",
+    "difficulty": "Facile"
+  },
+  {
+    "id": 90,
+    "question": "Qui pourrait être le plus respectueux des règles de sécurité ?",
+    "category": "Respect",
+    "difficulty": "Facile"
+  },
+  {
+    "id": 91,
+    "question": "Qui pourrait être le meilleur gestionnaire de budget loisirs ?",
+    "category": "Finances",
+    "difficulty": "Facile"
+  },
+  {
+    "id": 92,
+    "question": "Qui pourrait être le plus curieux des nouvelles applications ?",
+    "category": "Curiosité",
+    "difficulty": "Facile"
+  },
+  {
+    "id": 93,
+    "question": "Qui pourrait être le meilleur ami pour une randonnée ?",
+    "category": "Relations",
+    "difficulty": "Facile"
+  },
+  {
+    "id": 94,
+    "question": "Qui pourrait être le meilleur danseur de floss ?",
+    "category": "Absurde",
+    "difficulty": "Facile"
+  },
+  {
+    "id": 95,
+    "question": "Qui pourrait être le plus drôle en imitant des publicités ?",
+    "category": "Humour",
+    "difficulty": "Facile"
+  },
+  {
+    "id": 96,
+    "question": "Qui pourrait être le meilleur constructeur de châteaux de cartes ?",
+    "category": "Créativité",
+    "difficulty": "Facile"
+  },
+  {
+    "id": 97,
+    "question": "Qui pourrait être le plus patient avec un GPS qui bug ?",
+    "category": "Patience",
+    "difficulty": "Facile"
+  },
+  {
+    "id": 98,
+    "question": "Qui pourrait être le meilleur raconteur d'histoires drôles ?",
+    "category": "Communication",
+    "difficulty": "Facile"
+  },
+  {
+    "id": 99,
+    "question": "Qui pourrait être le plus créatif avec des origamis ?",
+    "category": "Créativité",
+    "difficulty": "Facile"
+  },
+  {
+    "id": 100,
+    "question": "Qui pourrait être le meilleur imitateur de personnages de dessins animés ?",
+    "category": "Talent",
+    "difficulty": "Facile"
+  }
+] 
