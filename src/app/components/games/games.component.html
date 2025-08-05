@@ -25,15 +25,7 @@
           [class.under-construction]="game.isUnderConstruction"
           *ngFor="let game of getGamesByCategory('taz')"
           (click)="selectGame(game)">
-          <div class="game-icon">{{ game.icon }}</div>
-          <div class="game-info">
-            <div class="game-name">{{ game.name }}</div>
-            <div class="game-description">{{ game.description }}</div>
-            <div class="game-details">
-              <span class="players">{{ game.minPlayers }}-{{ game.maxPlayers }} joueurs</span>
-              <span class="duration">{{ game.duration }}</span>
-            </div>
-          </div>
+          <div class="game-name">{{ game.name }}</div>
           <div class="construction-badge" *ngIf="game.isUnderConstruction">
             🚧 En travaux
           </div>
@@ -52,15 +44,7 @@
           [class.under-construction]="game.isUnderConstruction"
           *ngFor="let game of getGamesByCategory('questioning')"
           (click)="selectGame(game)">
-          <div class="game-icon">{{ game.icon }}</div>
-          <div class="game-info">
-            <div class="game-name">{{ game.name }}</div>
-            <div class="game-description">{{ game.description }}</div>
-            <div class="game-details">
-              <span class="players">{{ game.minPlayers }}-{{ game.maxPlayers }} joueurs</span>
-              <span class="duration">{{ game.duration }}</span>
-            </div>
-          </div>
+          <div class="game-name">{{ game.name }}</div>
           <div class="construction-badge" *ngIf="game.isUnderConstruction">
             🚧 En travaux
           </div>
